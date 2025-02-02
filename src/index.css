@@ -25,7 +25,6 @@ body {
 .header-top {
   width: 100%;
   background-color: #dae3e6;
-  display: grid;
   /* place-items: right; */
   justify-items: right;
 }
@@ -49,7 +48,7 @@ body {
 
 .button-one {
   border: 1px solid #303030;
-  font-size: 12px;
+  font-size: 14px;
   padding: 16px 24px;
   border-radius: 4px;
   background-color: #fff;
@@ -61,7 +60,7 @@ body {
   padding: 16px 24px;
   border: 1px solid #6bbf4f;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .button-one:hover,
@@ -90,7 +89,7 @@ h1 {
 .better {
   background-image: url(https://duo.com/assets/img/bottom_promo_desktop.jpg);
   background-size: cover;
-  height: 500px;
+  background-position: center;
 }
 
 .footerLinks Link:hover {
