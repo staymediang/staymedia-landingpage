@@ -17,6 +17,7 @@
 
 body {
   margin: 0;
+  box-sizing: border-box;
   background-color: white;
   color: #242424;
 }
@@ -32,7 +33,7 @@ body {
 .hbutton-one {
   border: 1px solid #303030;
   font-size: 12px;
-  padding: 10px 16px;
+  padding: 6px 18px;
   border-radius: 4px;
   background-color: #fff;
 }
@@ -40,7 +41,7 @@ body {
 .hbutton-two {
   background-color: #6bbf4f;
   color: white;
-  padding: 10px 16px;
+  padding: 6px 18px;
   border: 1px solid #6bbf4f;
   border-radius: 4px;
   font-size: 12px;
@@ -49,7 +50,7 @@ body {
 .button-one {
   border: 1px solid #303030;
   font-size: 12px;
-  padding: 12px 18px;
+  padding: 16px 24px;
   border-radius: 4px;
   background-color: #fff;
 }
@@ -57,28 +58,46 @@ body {
 .button-two {
   background-color: #6bbf4f;
   color: white;
-  padding: 12px 18px;
+  padding: 16px 24px;
   border: 1px solid #6bbf4f;
   border-radius: 4px;
   font-size: 12px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.button-one:hover,
+.hbutton-one:hover {
+  background-color: #242424;
+  transition: all ease-in-out 0.2s;
+  color: white;
+  cursor: pointer;
 }
 
-/*  {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.button-two:hover,
+.hbutton-two:hover {
+  transition: all ease-in-out 0.2s;
   cursor: pointer;
-  transition: border-color 0.25s;
+  background-color: white;
+  color: #6bbf4f;
 }
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #303030;
+}
+
+.better {
+  background-image: url(https://duo.com/assets/img/bottom_promo_desktop.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.footerLinks Link:hover {
+  text-decoration: underline;
+}
+
+/*
 button:hover {
   border-color: #646cff;
 }
@@ -87,15 +106,4 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+ */
