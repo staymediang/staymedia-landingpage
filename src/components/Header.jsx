@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col z-100">
       {/* TOP HEADER - Stays Static */}
       <div className="hidden lg:grid header-top py-8 px-4 md:px-24 bg-white z-20">
         <div className="flex flex-row gap-3 items-center text-sm text-[#676763]">
@@ -51,7 +51,7 @@ const Header = () => {
       {/* BOTTOM HEADER - Becomes Fixed on Scroll */}
       <div
         className={`z-50 flex flex-row bg-[#fdfdfd] justify-between items-center px-4 lg:px-24 py-6 transition-all duration-300 ${
-          isFixed ? "fixed top-0 left-0 w-full shadow-md z-50" : ""
+          isFixed ? "fixed top-0 left-0 w-full shadow-md z-100" : ""
         }`}
       >
         <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold text-[#303030]">
