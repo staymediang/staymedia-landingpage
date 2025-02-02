@@ -67,7 +67,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold">Chat with us</h3>
             <button
               onClick={() => setShowChatbox(false)}
-              className="text-gray-500 hover:text-red-500"
+              className="text-gray-500 hover:text-[#6bbf4f]"
             >
               <FaTimes size={18} />
             </button>
@@ -79,7 +79,7 @@ const Home = () => {
             className="w-full p-2 mt-2 border rounded-sm text-sm"
             placeholder="Type your message..."
           ></textarea>
-          <button className="mt-2 w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition-all">
+          <button className="mt-2 w-full bg-[#6bbf4f] text-white p-2 rounded-md hover:bg-[#6bbf4f]/70 transition-all">
             Send
           </button>
         </div>
