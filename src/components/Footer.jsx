@@ -16,7 +16,7 @@ const Footer = () => {
                 <MdSearch size={20} />
               </p>
               <input
-                className="bg-transparent text-sm outline-none focus:outline-none"
+                className="bg-transparent text-base outline-none focus:outline-none"
                 type="text"
                 placeholder="Search"
               />
@@ -62,9 +62,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block w-[15%]">
-          <p className="text-sm text-white mb-4 font-semibold">Products</p>
-          <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+        <div className="hidden lg:block w-[18%]">
+          <p className="text-base text-white mb-4 font-semibold">Products</p>
+          <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
             <Link className="text-[#6bbf4f] cursor-pointer">
               Key capabiltiy
             </Link>
@@ -92,10 +92,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="hidden lg:block w-[15%]">
-          <p className="text-sm text-white mb-4">Solutions</p>
+        <div className="hidden lg:block w-[18%]">
+          <p className="text-base text-white mb-4">Solutions</p>
           <div>
-            <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+            <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
               <Link className="text-[#6bbf4f] hover:underline">
                 All solutions
               </Link>
@@ -111,11 +111,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block w-[15%]">
-          <p className="text-sm text-white mb-4">Editors & Partners</p>
+        <div className="hidden lg:block w-[18%]">
+          <p className="text-base text-white mb-4">Editors & Partners</p>
 
           <div>
-            <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+            <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
               <Link className="text-[#6bbf4f] hover:underline">Editions</Link>
               <Link className="hover:underline">Duo Editions</Link>
               <Link className="hover:underline">Duo Free</Link>
@@ -138,10 +138,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="hidden lg:block w-[15%]">
-          <p className="text-sm text-white mb-4">Resources & Docs</p>
+        <div className="hidden lg:block w-[18%]">
+          <p className="text-base text-white mb-4">Resources & Docs</p>
           <div>
-            <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+            <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
               <Link className="text-[#6bbf4f] hover:underline">Resources</Link>
               <Link className="hover:underline">About Duo</Link>
               <Link className="hover:underline">Careers</Link>
@@ -164,7 +164,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-5 mx-0 lg:mx-24 lg:justify-items-center space-y-6 lg:place-items-center text-xs py-8 lg:rounded-3xl px-4 lg:px-24 bg-[#22272b] text-white">
+      <div className="grid grid-cols-2 lg:grid-cols-5 mx-0 lg:mx-24 lg:justify-items-center space-y-6 lg:place-items-center text-sm py-8 lg:rounded-3xl px-4 lg:px-24 bg-[#22272b] text-white">
         <p className="font-semibold col-span-2 lg:col-span-1 hover:underline cursor-pointer">
           Support
         </p>
@@ -204,8 +204,8 @@ const Footer = () => {
 
       <div className="flex flex-wrap flex-row gap-6 space-y-12 pt-10 lg:hidden px-4 lg:px-24">
         <div className=" w-[45%]">
-          <p className="text-sm text-white mb-4 font-semibold">Products</p>
-          <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+          <p className="text-base text-white mb-4 font-semibold">Products</p>
+          <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
             <Link className="text-[#6bbf4f] cursor-pointer">
               Key capabiltiy
             </Link>
@@ -234,9 +234,9 @@ const Footer = () => {
         </div>
 
         <div className=" w-[45%]">
-          <p className="text-sm text-white mb-4">Solutions</p>
+          <p className="text-base text-white mb-4">Solutions</p>
           <div>
-            <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+            <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
               <Link className="text-[#6bbf4f] hover:underline">
                 All solutions
               </Link>
@@ -253,10 +253,10 @@ const Footer = () => {
         </div>
 
         <div className=" w-[45%]">
-          <p className="text-sm text-white mb-4">Editors & Partners</p>
+          <p className="text-base text-white mb-4">Editors & Partners</p>
 
           <div>
-            <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+            <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
               <Link className="text-[#6bbf4f] hover:underline">Editions</Link>
               <Link className="hover:underline">Duo Editions</Link>
               <Link className="hover:underline">Duo Free</Link>
@@ -280,9 +280,9 @@ const Footer = () => {
           </div>
         </div>
         <div className=" w-[45%]">
-          <p className="text-sm text-white mb-4">Resources & Docs</p>
+          <p className="text-base text-white mb-4">Resources & Docs</p>
           <div>
-            <ul className="text-xs text-[#f4f4f4] flex flex-col gap-2">
+            <ul className="text-sm text-[#f4f4f4] flex flex-col gap-2">
               <Link className="text-[#6bbf4f] hover:underline">Resources</Link>
               <Link className="hover:underline">About Duo</Link>
               <Link className="hover:underline">Careers</Link>
@@ -306,8 +306,8 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col gap-2 mt-6 px-4 lg:px-24">
-        <p className="text-[10px] font-semibold"> &copy;2025 Duo</p>
-        <div className="flex flex-col sm:flex-row gap-1 sm:items-center text-[10px]">
+        <p className="text-sm font-semibold"> &copy;2025 Duo</p>
+        <div className="flex flex-col sm:flex-row gap-1 sm:items-center text-sm">
           <p>Terms of Service</p>
           <p className="hidden sm:block">|</p>
           <p>Privacy Statement</p>

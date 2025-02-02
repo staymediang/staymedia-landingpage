@@ -24,7 +24,7 @@ const Header = () => {
     <div className="flex flex-col">
       {/* TOP HEADER - Stays Static */}
       <div className="hidden lg:grid header-top py-8 px-4 md:px-24 bg-white z-20">
-        <div className="flex flex-row gap-3 items-center text-xs text-[#676763]">
+        <div className="flex flex-row gap-3 items-center text-sm text-[#676763]">
           <span className="flex flex-row gap-1 cursor-pointer items-center justify-center">
             <p>
               <MdSearch size={18} />
@@ -53,8 +53,8 @@ const Header = () => {
           isFixed ? "fixed top-0 left-0 w-full shadow-md z-50" : ""
         }`}
       >
-        <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-xs font-bold text-[#303030]">
-          <p className="text-2xl pr-3">Logo</p>
+        <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold text-[#303030]">
+          <p className="text-3xl pr-3">Logo</p>
           <div className="hidden lg:flex flex-row gap-3">
             <span className="flex flex-row items-center gap-2 justify-center cursor-pointer hover:text-[#6bbf4f]">
               <p>Our product</p>
@@ -89,7 +89,7 @@ const Header = () => {
             <button className="hbutton-two">Free Trial</button>
           </div>
 
-          <div className="hover:text-[#6bbf4f]">
+          <div className="hover:text-[#6bbf4f] lg:hidden">
             <MdMenu size={35} />
           </div>
         </div>

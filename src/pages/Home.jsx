@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
+  FaArrowUp,
   FaCheck,
   FaChevronDown,
   FaChevronUp,
+  FaCommentDots,
   FaQuoteLeft,
   FaRegFileAlt,
   FaRegQuestionCircle,
+  FaTimes,
 } from "react-icons/fa";
 import { FiFilePlus } from "react-icons/fi";
 import { PiUserCircleBold, PiShieldPlusBold } from "react-icons/pi";
@@ -14,8 +17,29 @@ import { Link } from "react-router-dom";
 import FloatingLabel from "../components/FloatingLabel";
 
 const Home = () => {
+  const [showScroll, setShowScroll] = useState(false);
+  const [showChatbox, setShowChatbox] = useState(true);
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="">
+    <div>
       <Hero />
       <Why />
       <Started />
@@ -24,6 +48,52 @@ const Home = () => {
       <FAQS />
       <Contact />
       <Better />
+
+      {/* Scroll to Top Button */}
+      {showScroll && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-26 text-sm right-0 bg-gray-700 text-white px-4 py-1 shadow-md hover:bg-gray-500 transition-all"
+        >
+          <FaChevronUp size={20} />
+          <p>Top</p>
+        </button>
+      )}
+
+      {/* Chatbox Popup */}
+      {showChatbox && (
+        <div className="fixed bottom-16 right-6 bg-white shadow-lg rounded-lg w-80 p-4">
+          <div className="flex justify-between items-center">
+            <h3 className="text-lg font-semibold">Chat with us</h3>
+            <button
+              onClick={() => setShowChatbox(false)}
+              className="text-gray-500 hover:text-red-500"
+            >
+              <FaTimes size={18} />
+            </button>
+          </div>
+          <p className="text-gray-600 text-sm mt-2">
+            Hi there! How can we help you today?
+          </p>
+          <textarea
+            className="w-full p-2 mt-2 border rounded-sm text-sm"
+            placeholder="Type your message..."
+          ></textarea>
+          <button className="mt-2 w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition-all">
+            Send
+          </button>
+        </div>
+      )}
+
+      {/* Chatbox Icon (Reappear after closing the popup) */}
+      {!showChatbox && (
+        <button
+          onClick={() => setShowChatbox(true)}
+          className="fixed bottom-6 right-4 bg-green-600 text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
+        >
+          <FaCommentDots size={20} />
+        </button>
+      )}
     </div>
   );
 };
@@ -31,7 +101,7 @@ const Home = () => {
 const Hero = () => {
   return (
     <div className="px-4 lg:px-24 py-10 text-[#61615d] bg-[#fdfdfd]">
-      <span className="flex flex-row text-sm md:text-xs uppercase gap-1 mb-10">
+      <span className="flex flex-row text-base md:text-sm uppercase gap-1 mb-10">
         <p className="underline">partnerships</p>
         <p>/ duo</p>
         <p className="font-bold"> msp program</p>
@@ -470,7 +540,7 @@ const FAQS = () => {
           <div key={index} className="border-b border-gray-300 overflow-hidden">
             <button
               onClick={() => toggleFAQ(index)}
-              className="flex justify-between px-4 lg:px-24 items-center w-full text-left font-medium text-base md:text-sm py-6 bg-white hover:bg-gray-200 transition-all"
+              className="flex justify-between px-4 lg:px-24 items-center w-full text-left font-medium text-base  py-6 bg-white hover:bg-gray-200 transition-all"
             >
               <span className="font-bold">{faq.question}</span>
               <div className="flex items-center gap-2">
