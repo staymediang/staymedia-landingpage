@@ -205,16 +205,16 @@ const Why = () => {
             — Ted Brown, Director of Product Management, Ntiva
           </p>
         </div>
-        <div className="md:col-span-3 py-8">
-          <div className="bg-[#6bbf4f] relative w-[100%] h-[200px] md:h-[300px] lg:h-[100%] pl-8 py-2">
-            <span className="absolute left-[22%] lg:left-0 top-[-1.6rem] lg:top-[-1.2rem]">
+        <div className="md:col-span-3 py-8 flex items-center">
+          <div className="bg-[#6bbf4f] relative w-[100%] h-[200px] md:h-[250px] pl-8 py-2">
+            <span className="absolute left-[22%] lg:left-6 top-[-1.6rem] lg:top-[-1.2rem]">
               <img
                 className="w-[12rem] md:w-[14rem]"
                 src="https://duo.com/assets/img/featured-quote/tigunia-customer-photo.png"
                 alt=""
               />
             </span>
-            <span className="absolute w-[6.5rem] shadow-2xl bg-white py-10 md:py-8 bottom-1 md:bottom-10 lg:bottom-1 left-60 lg:left-40 flex items-center justify-center z-50">
+            <span className="absolute w-[6.5rem] shadow-2xl drop-shadow-2xl bg-white py-10 md:py-8 bottom-1 md:bottom-10 lg:bottom-1 left-60 lg:left-40 flex items-center justify-center z-50">
               <img
                 className="w-[4rem]"
                 src="https://duo.com/img/asset/aW1nL2N1c3RvbWVybG9nb3MvTnRpdmEtTG9nby1CbHVlLVRhZ2xpbmUucG5n?filt=greyscale&gam=0.1&s=8e4a467c7ae624be93881f55a9d6025e"
@@ -267,12 +267,12 @@ const Grow = () => {
           <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 pb-12">
             <div className="">
               <p className="mb-3">
-                <PiUserCircleBold size={25} color="#6bbf4f" />
+                <PiUserCircleBold size={40} color="#6bbf4f" />
               </p>
-              <p className="text-xl md:text-lg font-semibold mb-2">
+              <p className="text-xl font-semibold mb-2">
                 New! Role-based access controls
               </p>
-              <div className="text-base md:text-sm pt-2 flex flex-col gap-2">
+              <div className="text-base pt-2 flex flex-col gap-3">
                 <p className="">
                   Simplify your multi-tenant management routine with new
                   subaccount role and access tagging features in the Duo Admin
@@ -296,12 +296,10 @@ const Grow = () => {
             <div>
               <p className="mb-3">
                 {" "}
-                <HiOutlineInformationCircle size={25} color="#6bbf4f" />{" "}
+                <HiOutlineInformationCircle size={40} color="#6bbf4f" />{" "}
               </p>
-              <p className="text-xl md:text-lg font-semibold mb-2">
-                Knowledge base
-              </p>
-              <div className="text-base md:text-sm flex flex-col gap-2 pt-4">
+              <p className="text-xl font-semibold mb-2">Knowledge base</p>
+              <div className="text-base flex flex-col gap-3 pt-2">
                 <p className="">
                   Quickly find the support you need to resolve your issue, with
                   helpful documentation and relevant articles. Plus, you can
@@ -319,12 +317,10 @@ const Grow = () => {
           <div>
             <p className="mb-3">
               {" "}
-              <PiShieldPlusBold size={25} color="#6bbf4f" />{" "}
+              <PiShieldPlusBold size={40} color="#6bbf4f" />{" "}
             </p>
-            <p className="text-xl md:text-lg font-semibold mb-2">
-              Secure MSP Center{" "}
-            </p>
-            <div className="text-base md:text-sm pt-4 flex flex-col gap-2">
+            <p className="text-xl font-semibold mb-2">Secure MSP Center </p>
+            <div className="text-base  pt-2 flex flex-col gap-3">
               <p className="">
                 Interested in selling other SaaS-security products? Check out
                 Secure MSP Center, our direct buying model for Umbrella and
@@ -340,12 +336,10 @@ const Grow = () => {
           <div>
             <p className="mb-3">
               {" "}
-              <FaRegFileAlt size={25} color="#6bbf4f" />{" "}
+              <FaRegFileAlt size={40} color="#6bbf4f" />{" "}
             </p>
-            <p className="text-xl md:text-lg font-semibold mb-2">
-              Duo documentation
-            </p>
-            <div className="text-base md:text-sm pt-4 flex flex-col gap-2 ">
+            <p className="text-xl font-semibold mb-2">Duo documentation</p>
+            <div className="text-base pt-2 flex flex-col gap-3 ">
               <p className="">
                 Duo supports a wide range of devices and applications. Visit
                 this page for detailed documentation, installation, and
@@ -360,12 +354,12 @@ const Grow = () => {
           <div>
             <p className="mb-3">
               {" "}
-              <FaRegQuestionCircle size={25} color="#6bbf4f" />{" "}
+              <FaRegQuestionCircle size={40} color="#6bbf4f" />{" "}
             </p>
-            <p className="text-xl md:text-lg font-semibold mb-2">
+            <p className="text-xl font-semibold mb-2">
               More questions? Connect with your partner manager{" "}
             </p>
-            <p className="text-base md:text-sm pt-4 mb-2">
+            <p className="text-base pt-2 mb-2">
               Email msp@duo.com for anything related to the MSP program or your
               multi-tenant console, or if you need Partner Manager or Sales
               Engineer support!{" "}
@@ -402,7 +396,7 @@ const Learn = () => {
         <h1 className="pb-6">
           Learn more about the Duo Managed Service Provider Program
         </h1>
-        <p className="text-base md:text-sm mb-16">
+        <p className="text-base mb-16">
           Our no-barriers-to-entry model ensures there is no downtime to get
           products deployed. With no certifications or lengthy sign-up
           processes, you can generate revenue in a shorter timeframe. Check out
@@ -421,7 +415,7 @@ const Learn = () => {
           <p className="text-[#303030] font-bold text-2xl pb-3">
             More resources
           </p>
-          <div className="flex flex-col gap-3 text-base md:text-sm pt-2">
+          <div className="flex flex-col gap-4 text-base pt-2">
             <p className="underline leading-5.5 cursor-pointer text-[#5b6063]">
               {" "}
               How MSPs Help Small Businesses with Essential Cyber Insurance
@@ -442,7 +436,7 @@ const Learn = () => {
             alt=""
           />
           <p className="text-[#303030] font-bold text-2xl pb-3">Webinars</p>
-          <div className="text-base md:text-sm pt-2 flex flex-col gap-3">
+          <div className="text-base pt-2 flex flex-col gap-4">
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
               Duo MSP Tech Talks: Customer Deployment in 60-Minutes
             </p>
@@ -464,7 +458,7 @@ const Learn = () => {
           <p className="text-[#303030] font-bold text-2xl pb-3">
             Upcoming events
           </p>
-          <div className="text-base md:text-sm pt-2 flex flex-col gap-3">
+          <div className="text-base pt-2 flex flex-col gap-4">
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
               Managed Service Summit London - Sept 11
             </p>
@@ -641,7 +635,7 @@ const Better = () => {
   return (
     <div className="better h-[250px] md:h-[500px] px-4 lg:px-24 flex flex-col justify-center">
       <div className="w-[100%] md:w-[84%] lg:w-[78%] ">
-        <p className="text-[2.5rem] md:text-[4.8rem] leading-10 md:leading-18 text-white font-bold">
+        <p className="text-[2.8rem] md:text-[4.8rem] lg:text-[5rem] leading-10 md:leading-18 text-white font-bold">
           We're better together. Become a partner today.
         </p>
         <button className="button-two mt-8"> Find out more</button>

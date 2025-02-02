@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className=" pt-14 pb-10 bg-[#363f44] text-white">
-      <div className="w-[100%] flex flex-row flex-wrap px-4 lg:px-24 gap-8 mb-8">
+      <div className="w-[100%] flex flex-row flex-wrap px-4 lg:px-24 gap-4 mb-8">
         <div className="w-[100%] lg:w-[20%] h-fit flex flex-row flex-wrap">
           <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 w-full">
             <p className="text-2xl pb-4">Logo</p>
@@ -85,7 +85,7 @@ const Footer = () => {
             <Link className="text-[#6bbf4f] cursor-pointer hover:underline">
               Duo use cases
             </Link>
-            <Link className="hover:underline">State & Local Gorvenment</Link>
+            <Link className="hover:underline">State & Local Government</Link>
             <Link className="hover:underline">Federal Governments</Link>
             <Link className="hover:underline">Enterprise</Link>
             <Link className="hover:underline">Small to Medium Bysiness</Link>
@@ -164,7 +164,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-5 mx-0 lg:mx-24 lg:justify-items-center space-y-6 lg:place-items-center text-sm py-8 lg:rounded-3xl px-4 lg:px-24 bg-[#22272b] text-white">
+      <div className="grid grid-cols-2 lg:grid-cols-5 mx-0 lg:mx-24 lg:justify-items-center space-y-6 lg:place-items-center text-sm py-8 lg:rounded-3xl px-4 lg:px-12 bg-[#22272b] text-white">
         <p className="font-semibold col-span-2 lg:col-span-1 hover:underline cursor-pointer">
           Support
         </p>
@@ -184,15 +184,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <ul className="grid grid-cols-1 gap-2 space-x-2 mt-6">
+        <ul className="grid grid-cols-1 gap-2 space-x-2 pt-8">
           <p className="hover:underline cursor-pointer">Get Duo Mobile iOS</p>
           <p className="hover:underline cursor-pointer">
             Get Duo Mobile Android
           </p>
         </ul>
 
-        <div>
-          <p className="text-[#6bbf4f] cursor-pointer mb-2">
+        <div className="mt-[-18px]">
+          <p className="text-[#6bbf4f] cursor-pointer pb-2">
             Support for Admins
           </p>
           <ul className="flex flex-col gap-2">
