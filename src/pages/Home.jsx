@@ -543,7 +543,7 @@ const FAQS = () => {
             >
               <span className="font-bold">{faq.question}</span>
               <div className="flex items-center gap-2">
-                <span className="text-sm">
+                <span className="text-sm hidden md:block">
                   {openIndex === index ? "Read Less" : "Read More"}
                 </span>
                 {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
