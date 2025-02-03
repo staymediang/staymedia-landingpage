@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -20,14 +22,7 @@ body {
   box-sizing: border-box;
   background-color: white;
   color: #242424;
-  font-family: Helvetica, sans-serif;
-}
-
-.header-top {
-  width: 100%;
-  background-color: #dae3e6;
-  /* place-items: right; */
-  justify-items: right;
+  font-family: "Rubik", serif;
 }
 
 .hbutton-one {

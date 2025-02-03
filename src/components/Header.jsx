@@ -24,28 +24,11 @@ const Header = () => {
   return (
     <div className="flex flex-col z-100">
       {/* TOP HEADER - Stays Static */}
-      <div className="hidden lg:grid header-top py-8 px-4 md:px-24 bg-white z-20">
-        <div className="flex flex-row gap-3 items-center text-sm text-[#676763]">
-          <span className="flex flex-row gap-1 cursor-pointer items-center justify-center">
-            <p>
-              <MdSearch size={18} />
-            </p>{" "}
-            Search
-          </span>
-          <Link>Duo Blog</Link>
-          <span className="flex flex-row gap-1 cursor-pointer items-center">
-            <p>Docs & Support</p>{" "}
-            <p>
-              <FaAngleDown />
-            </p>
-          </span>
-          <Link className="flex flex-row items-center gap-1">
-            <p>
-              <LiaUserLockSolid />
-            </p>{" "}
-            <p>Admin Login</p>
-          </Link>
-        </div>
+      <div className=" py-2 px-4 md:px-24 bg-[#6bbf4f] z-20">
+        <span className="flex flex-row gap-1 text-xs items-center">
+          <p className="text-white">If social networks shut down for 24hrs,</p>
+          <Link className="text-[#fbb52f]">how will your business run?</Link>
+        </span>
       </div>
 
       {/* BOTTOM HEADER - Becomes Fixed on Scroll */}
@@ -54,48 +37,67 @@ const Header = () => {
           isFixed ? "fixed top-0 left-0 w-full shadow-md z-100" : ""
         }`}
       >
-        <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold text-[#303030]">
-          <p className="text-3xl pr-3">Logo</p>
-          <div className="hidden lg:flex flex-row gap-3">
-            <span className="flex flex-row items-center gap-2 justify-center cursor-pointer hover:text-[#6bbf4f]">
-              <p>Our product</p>
-              <p>
-                <FaAngleDown />
-              </p>
+        <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold">
+          <div className="w-[12rem] pr-3">
+            <img
+              src="https://staymedia.ng/wp-content/uploads/2023/08/STAYMEDIA_1_logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        {/* MIDDLE */}
+        <div className="flex flex-col gap-3">
+          <div
+            className={`flex flex-row justify-center items-center text-sm gap-1 ${
+              isFixed ? "hidden" : "flex"
+            }`}
+          >
+            <p className="text-[#6bbf4f]">Internship Opportunity:</p>
+            <p className="text-gray-400">Come intern with us to improve you.</p>
+          </div>
+          <div className="hidden lg:flex flex-row justify-center  text-base font-[500]">
+            <span className="flex flex-row items-center gap-2 px-4 border-t-[1px] border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#fbb52f] hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
+              <p>Home</p>
             </span>
-            <span className="flex flex-row items-center gap-2 justify-center cursor-pointer hover:text-[#6bbf4f]">
+            <span className="flex flex-row items-center gap-2 px-4 border-t-[1px] border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
+              <p>About</p>
+            </span>
+            <span className="flex flex-row items-center gap-2 px-4 border-t-1 border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
+              <p>Services</p>
+            </span>
+            <span className="flex flex-row items-center gap-2 px-4 border-t-1 border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
               <p>Solutions</p>
-              <p>
-                <FaAngleDown />
-              </p>
             </span>
-            <span className="flex flex-row items-center gap-2 justify-center cursor-pointer hover:text-[#6bbf4f]">
-              <p>Why Duo</p>
-              <p>
-                <FaAngleDown />
-              </p>
-            </span>
-            <span className="flex flex-row items-center gap-2 justify-center cursor-pointer hover:text-[#6bbf4f]">
-              <p>Pricing</p>
-              <p>
-                <FaAngleDown />
-              </p>
+            <span className="flex flex-row items-center gap-2 px-4 border-t-1 border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
+              <p>More</p>
             </span>
           </div>
         </div>
 
-        <div className="flex flex-row gap-8 items-center">
+        <div className="flex flex-row gap-8 text-sm items-center">
           <div className="hidden sm:flex flex-row items-center gap-2">
-            <button className="hbutton-one">Contact sales</button>
-            <button className="hbutton-two">Free Trial</button>
+            <img src="" alt="" />
+            <div className="flex flex-col gap-1 justify-center text-gray-400">
+              <p>Have any questions?</p>
+              <span className="flex flex-row items-center gap-1">
+                <p>Free:</p>
+                <Link className="text-[#fbb52f]">(+234) 802 325 0782</Link>
+              </span>
+            </div>
           </div>
 
-          {/* Menu Button */}
-          <div
-            className="hover:text-[#6bbf4f] lg:hidden cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <MdClose size={35} /> : <MdMenu size={35} />}
+          {/* BOTTOM */}
+
+          <div className="border-l-gray-400 border-l">
+            <MdSearch className="text-[#6bbf4f] pl-2" size={40} />
+            {/* Menu Button */}
+            <div
+              className="hover:text-[#6bbf4f] lg:hidden cursor-pointer"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <MdClose size={35} /> : <MdMenu size={35} />}
+            </div>
           </div>
         </div>
       </div>
