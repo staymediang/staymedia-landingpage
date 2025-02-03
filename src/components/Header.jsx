@@ -95,8 +95,11 @@ const Header = () => {
 
           {/* BOTTOM */}
 
-          <div className="border-l-gray-400 border-l">
-            <MdSearch className="text-[#6bbf4f] pl-2" size={40} />
+          <div className="md:border-l-gray-400 md:border-l flex flex-row gap-3">
+            <MdSearch
+              className="text-[#6bbf4f] pl-2 hidden md:block"
+              size={40}
+            />
             {/* Menu Button */}
             <div
               className="hover:text-[#6bbf4f] lg:hidden cursor-pointer"
