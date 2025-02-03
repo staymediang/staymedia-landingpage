@@ -53,7 +53,7 @@ const Home = () => {
       {showScroll && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-26 text-sm right-0 bg-gray-700 text-white px-4 py-1 shadow-md hover:bg-gray-500 transition-all"
+          className="fixed z-60 bottom-26 text-sm right-0 bg-gray-700 text-white px-4 py-1 shadow-md hover:bg-gray-500 transition-all"
         >
           <FaChevronUp size={20} />
           <p>Top</p>
@@ -62,7 +62,7 @@ const Home = () => {
 
       {/* Chatbox Popup */}
       {showChatbox && (
-        <div className="fixed bottom-16 right-6 bg-white shadow-lg rounded-lg w-80 p-4">
+        <div className="fixed z-60 bottom-16 right-6 bg-white shadow-lg rounded-lg w-80 p-4">
           <div className="flex justify-between items-center">
             <h3 className="text-lg font-semibold">Chat with us</h3>
             <button
@@ -89,7 +89,7 @@ const Home = () => {
       {!showChatbox && (
         <button
           onClick={() => setShowChatbox(true)}
-          className="fixed bottom-6 right-4 bg-green-600 text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
+          className="fixed z-60 bottom-6 right-4 bg-green-600 text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
         >
           <FaCommentDots size={20} />
         </button>
@@ -101,23 +101,23 @@ const Home = () => {
 const Hero = () => {
   return (
     <div className="px-4 lg:px-24 py-10 text-[#61615d] bg-[#fdfdfd]">
-      <span className="flex flex-row text-base md:text-sm uppercase gap-1 mb-10">
+      {/* <span className="flex flex-row text-base md:text-sm uppercase gap-1 mb-10">
         <p className="underline">partnerships</p>
         <p>/ duo</p>
         <p className="font-bold"> msp program</p>
-      </span>
+      </span> */}
       <div className="flex flex-col-reverse md:flex-row  gap-4 ">
         <div className="flex flex-col gap-2 w-full md:w-[60%]">
-          <h1 className="mb-4">Duo MSP Program</h1>
+          <h1 className="mb-4">MCS Package</h1>
           <p className="text-lg md:text-base mb-4">
-            Duo’s modern approach to security deserves a modern program approach
-            for our Managed Service Providers (MSP). That means a partner
-            program that provides you with simple-to-set-up security solutions
-            that easily scales with your business.
+            The MCS Package offers a modern approach to driving exceptional
+            business sales. A all-in-one solution that allows STAY MEDIA handles
+            the online marketing of your business while driving more sales or
+            generating leads.
           </p>
           <div className="flex flex-row gap-2">
-            <button className="button-two">Get a demo</button>
-            <button className="button-one">Become a partner</button>
+            <button className="button-two">Join The WaitList</button>
+            {/* <button className="button-one">Become a partner</button> */}
           </div>
         </div>
         <div className="">
@@ -136,13 +136,13 @@ const Why = () => {
   return (
     <div className="">
       <div className="mt-8 lg:mt-16 pb-20 px-4 lg:px-24">
-        <h1 className="mb-6">Why Duo MSP</h1>
+        <h1 className="mb-6">Why MCS Package</h1>
         <p className="w-full text-lg md:text-base md:w-[70%]">
-          The Duo Managed Service Provider (MSP) Program enables partners to
-          leverage Duo’s cloud-based, multi-tenant architecture to swiftly
-          secure customers’ environments—all without the hassle of deploying
-          physical agents. Grow your security stack and ensure application
-          access to only trusted users and devices.{" "}
+          The Marketing-Community-Sales Package enables our prospective clients
+          and customers to outsource these aspect of their online marketing to
+          professionals like STAY MEDIA for certain period. Grow your
+          follower-base and guaranteed remarkable sales from only trusted
+          community.
         </p>
       </div>
 
@@ -168,24 +168,22 @@ const Why = () => {
               <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
-              <p>
-                Lower TCO with speed to deployment and reduced support tickets
-              </p>
+              <p>Lower hassle</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
               <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
-              <p>Faster ROI for your MSP business</p>
+              <p>Faster ROI for your business</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
               <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
-              <p>Excellent documentation and sales enablement support</p>
+              <p>Excellent support service</p>
             </li>
           </ul>
-          <button className="button-two">Get the MSP at a glance</button>
+          <button className="button-two">Join the waitlist</button>
         </div>
       </div>
 
@@ -404,8 +402,8 @@ const Learn = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div className="">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* <div className="">
           <div className="pb-4">
             <img
               src="https://duo.com/assets/img/content-text/circle_1-1706636498.png"
@@ -447,6 +445,13 @@ const Learn = () => {
               Six Key Mistakes MSPs Make with SMB Security
             </p>
           </div>
+        </div> */}
+
+        <div>
+          <img
+            src="https://png.pngtree.com/png-clipart/20221006/ourmid/pngtree-calendar-3d-icon-render-png-image_6275730.png"
+            alt=""
+          />
         </div>
 
         <div>

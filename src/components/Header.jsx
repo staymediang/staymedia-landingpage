@@ -38,7 +38,7 @@ const Header = () => {
         }`}
       >
         <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold">
-          <div className="w-[12rem] pr-3">
+          <div className="w-[10rem] pr-3">
             <img
               src="https://staymedia.ng/wp-content/uploads/2023/08/STAYMEDIA_1_logo.png"
               alt=""
@@ -56,28 +56,34 @@ const Header = () => {
             <p className="text-[#6bbf4f]">Internship Opportunity:</p>
             <p className="text-gray-400">Come intern with us to improve you.</p>
           </div>
-          <div className="hidden lg:flex flex-row justify-center  text-base font-[500]">
-            <span className="flex flex-row items-center gap-2 px-4 border-t-[1px] border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#fbb52f] hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
-              <p>Home</p>
-            </span>
-            <span className="flex flex-row items-center gap-2 px-4 border-t-[1px] border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
-              <p>About</p>
-            </span>
-            <span className="flex flex-row items-center gap-2 px-4 border-t-1 border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
-              <p>Services</p>
-            </span>
-            <span className="flex flex-row items-center gap-2 px-4 border-t-1 border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
-              <p>Solutions</p>
-            </span>
-            <span className="flex flex-row items-center gap-2 px-4 border-t-1 border-t-gray-400 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 hover:border-t-3 ease-out transition-all duration-200 hover:border-t-gray-500">
-              <p>More</p>
-            </span>
+          <div className="hidden lg:flex flex-row justify-center text-base font-[500]">
+            {["Home", "About", "Services", "Solutions", "More"].map((item) => (
+              <span
+                key={item}
+                className={`relative group flex flex-row items-center gap-2 px-5 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 
+      ${isFixed ? "border-none" : "border-t-[1px] border-t-gray-400"}`}
+              >
+                <p>{item}</p>
+                {/* Animated Border */}
+                <div
+                  className={`absolute top-0 left-0 h-[2px] bg-gray-700 w-0 transition-all duration-700 ease-out group-hover:w-full ${
+                    isFixed ? "hidden" : "block"
+                  }`}
+                ></div>
+              </span>
+            ))}
           </div>
         </div>
 
         <div className="flex flex-row gap-8 text-sm items-center">
-          <div className="hidden sm:flex flex-row items-center gap-2">
-            <img src="" alt="" />
+          <div className="hidden sm:flex flex-row items-center gap-1">
+            <div className="w-[2.5rem]">
+              <img
+                className="w-fit"
+                src="https://staymedia.ng/wp-content/uploads/2021/03/web-graphics-30.svg"
+                alt=""
+              />
+            </div>
             <div className="flex flex-col gap-1 justify-center text-gray-400">
               <p>Have any questions?</p>
               <span className="flex flex-row items-center gap-1">
