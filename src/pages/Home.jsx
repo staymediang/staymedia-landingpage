@@ -258,12 +258,12 @@ const Grow = () => {
   return (
     <div className="px-4 lg:px-24 text-white py-16">
       <div className="greenBg py-12 px-8">
-        <div className="flex flex-row pb-8 justify-between items-baseline ">
-          <div className="flex flex-col gap-4 w-[45%]">
+        <div className="flex flex-row gap-8 lg:flex-row pb-8 justify-between items-baseline ">
+          <div className="flex flex-col gap-2 w-[45%]">
             <p className="text-[#fbb52f] uppercase text-sm">
               Industries we serve
             </p>
-            <p className="text-[1.5em] text-white font-semibold">
+            <p className="text-[1.8em] leading-8 text-white font-semibold">
               Our professional services customized for your industry
             </p>
           </div>
@@ -277,8 +277,8 @@ const Grow = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-  lg:grid-cols-5 gap-4">
-          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img1.svg"
@@ -293,7 +293,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
+          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img2.svg"
@@ -307,7 +307,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
+          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img3.svg"
@@ -321,7 +321,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
+          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img6.svg"
@@ -335,7 +335,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
+          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img5.svg"
@@ -349,132 +349,6 @@ const Grow = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="py-6">
-          <div className="border-b-gray-500 border-b-2 lg:border-none">
-            <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 pb-12">
-              <div className="">
-                <p className="mb-3">
-                  <PiUserCircleBold size={40} color="#6bbf4f" />
-                </p>
-                <p className="text-xl font-semibold mb-2">
-                  New! Role-based access controls
-                </p>
-                <div className="text-base pt-2 flex flex-col gap-3">
-                  <p className="">
-                    Simplify your multi-tenant management routine with new
-                    subaccount role and access tagging features in the Duo Admin
-                    Panel—improving efficiency without compromising security.
-                  </p>
-                  <p className="underline  cursor-pointer">
-                    {" "}
-                    Check out the infographic
-                  </p>
-                  <p className="underline  cursor-pointer">
-                    {" "}
-                    Get the RBAC Admin Guide
-                  </p>
-                  <p className="underline  cursor-pointer">
-                    {" "}
-                    Read the announcement
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <p className="mb-3">
-                  {" "}
-                  <HiOutlineInformationCircle size={40} color="#6bbf4f" />{" "}
-                </p>
-                <p className="text-xl font-semibold mb-2">Knowledge base</p>
-                <div className="text-base flex flex-col gap-3 pt-2">
-                  <p className="">
-                    Quickly find the support you need to resolve your issue,
-                    with helpful documentation and relevant articles. Plus, you
-                    can view your support cases or create a new case.
-                  </p>
-                  <p className="underline cursor-pointer">
-                    Visit the Duo Help Center{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 py-12">
-            <div>
-              <p className="mb-3">
-                {" "}
-                <PiShieldPlusBold size={40} color="#6bbf4f" />{" "}
-              </p>
-              <p className="text-xl font-semibold mb-2">Secure MSP Center </p>
-              <div className="text-base  pt-2 flex flex-col gap-3">
-                <p className="">
-                  Interested in selling other SaaS-security products? Check out
-                  Secure MSP Center, our direct buying model for Umbrella and
-                  Secure Endpoint modelled after the success of the Duo Managed
-                  Service Provider program.{" "}
-                </p>
-                <p className="underline text-sm cursor-pointer">
-                  Simplify your buying experience
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <p className="mb-3">
-                {" "}
-                <FaRegFileAlt size={40} color="#6bbf4f" />{" "}
-              </p>
-              <p className="text-xl font-semibold mb-2">Duo documentation</p>
-              <div className="text-base pt-2 flex flex-col gap-3 ">
-                <p className="">
-                  Duo supports a wide range of devices and applications. Visit
-                  this page for detailed documentation, installation, and
-                  configuration information.{" "}
-                </p>
-                <p className="underline cursor-pointer">Get expert guidance </p>
-              </div>
-            </div>
-          </div>
-
-          <div className=" px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <p className="mb-3">
-                {" "}
-                <FaRegQuestionCircle size={40} color="#6bbf4f" />{" "}
-              </p>
-              <p className="text-xl font-semibold mb-2">
-                More questions? Connect with your partner manager{" "}
-              </p>
-              <p className="text-base pt-2 mb-2">
-                Email msp@duo.com for anything related to the MSP program or
-                your multi-tenant console, or if you need Partner Manager or
-                Sales Engineer support!{" "}
-              </p>
-            </div>
-
-            <div>
-              <p className="mb-3">
-                {" "}
-                <FiFilePlus size={25} color="#6bbf4f" />{" "}
-              </p>
-              <p className="text-xl md:text-lg font-semibold mb-2">
-                There’s more where that came from{" "}
-              </p>
-              <div className="text-base md:text-sm pt-4 flex flex-col gap-2">
-                <p className="">
-                  No matter the sale, we’ve got the materials to help you sell
-                  Duo, including training materials, collateral, and sales
-                  enablement resources.{" "}
-                </p>
-                <p className="underline cursor-pointer">
-                  Access the brandfolder
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );
@@ -496,50 +370,6 @@ const Learn = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* <div className="">
-          <div className="pb-4">
-            <img
-              src="https://duo.com/assets/img/content-text/circle_1-1706636498.png"
-              alt=""
-            />
-          </div>
-          <p className="text-[#303030] font-bold text-2xl pb-3">
-            More resources
-          </p>
-          <div className="flex flex-col gap-4 text-base pt-2">
-            <p className="underline leading-5.5 cursor-pointer text-[#5b6063]">
-              {" "}
-              How MSPs Help Small Businesses with Essential Cyber Insurance
-              Cover
-            </p>
-            <p className="underline leading-5.5 cursor-pointer text-[#5b6063]">
-              5 Key Findings for MSPs to Strengthen Security from Duo's Trusted
-              Access Report
-            </p>
-            <p className="underline cursor-pointer text-[#5b6063]">Read more</p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            className="pb-4"
-            src="https://duo.com/assets/img/content-text/circle_2.png"
-            alt=""
-          />
-          <p className="text-[#303030] font-bold text-2xl pb-3">Webinars</p>
-          <div className="text-base pt-2 flex flex-col gap-4">
-            <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Duo MSP Tech Talks: Customer Deployment in 60-Minutes
-            </p>
-            <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Duo MSP Tech Talks: Land and Expand
-            </p>
-            <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Six Key Mistakes MSPs Make with SMB Security
-            </p>
-          </div>
-        </div> */}
-
         <div>
           <img
             src="https://png.pngtree.com/png-clipart/20221006/ourmid/pngtree-calendar-3d-icon-render-png-image_6275730.png"
