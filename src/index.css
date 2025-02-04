@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
@@ -22,7 +24,7 @@ body {
   box-sizing: border-box;
   background-color: white;
   color: #242424;
-  font-family: "Rubik", serif;
+  font-family: "Poppins", serif;
 }
 
 .hbutton-one {
@@ -34,10 +36,10 @@ body {
 }
 
 .hbutton-two {
-  background-color: #6bbf4f;
+  background-color: #009956;
   color: white;
   padding: 6px 18px;
-  border: 1px solid #6bbf4f;
+  border: 1px solid #009956;
   border-radius: 4px;
   font-size: 12px;
 }
@@ -51,10 +53,10 @@ body {
 }
 
 .button-two {
-  background-color: #6bbf4f;
+  background-color: #009956;
   color: white;
   padding: 16px 24px;
-  border: 1px solid #6bbf4f;
+  border: 1px solid #009956;
   border-radius: 4px;
   font-size: 14px;
 }
@@ -72,7 +74,7 @@ body {
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   background-color: white;
-  color: #6bbf4f;
+  color: #009956;
 }
 
 h1 {
@@ -92,6 +94,13 @@ h1 {
   text-decoration: underline;
 }
 
+.greenBg {
+  background-color: #009956;
+}
+
+.greenText {
+  color: #009956;
+}
 /*
 button:hover {
   border-color: #646cff;

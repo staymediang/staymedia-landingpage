@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="  text-white">
-      <div className="pt-14 pb-10 w-[100%] bg-[#6bbf4f] text-sm space-y-6  flex flex-row flex-wrap justify-between px-4 lg:px-24 gap-4 item">
+      <div className="pt-14 pb-10 w-[100%] greenBg text-sm space-y-6  flex flex-row flex-wrap justify-between px-4 lg:px-24 gap-4 item">
         <div className="w-[100%] lg:w-[30%] flex flex-col gap-4">
           <img
             className="w-[10rem]"

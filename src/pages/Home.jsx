@@ -153,31 +153,31 @@ const Why = () => {
         <div className="">
           <ul className="flex flex-col text-lg md:text-base gap-2.5 items-start pb-6">
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
-              <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
+              <p className="greenBg text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
               <p>Conveniently manage all your customers in one console</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
-              <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
+              <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
               <p>Pay-as-you-go pricing to scale with your business</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
-              <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
+              <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
               <p>Lower hassle</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
-              <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
+              <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
               <p>Faster ROI for your business</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
-              <p className="bg-[#6bbf4f] text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
+              <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
               <p>Excellent support service</p>
@@ -190,7 +190,7 @@ const Why = () => {
       <div className="bg-[#f5f6f8] relative px-0 lg:pl-24 grid grid-cols-1 md:grid-cols-6 gap-14">
         <div className="md:col-span-3 px-4 lg:px-0 py-14">
           <p className="absolute top-[-1.8rem] ">
-            <FaQuoteLeft color="#6bbf4f" size={55} />
+            <FaQuoteLeft color="#009956" size={55} />
           </p>
           <p className="text-lg md:text-base leading-8">
             At Ntiva we see Cisco’s Duo portfolio as a beacon of continuous
@@ -204,7 +204,7 @@ const Why = () => {
           </p>
         </div>
         <div className="md:col-span-3 py-8 flex items-center">
-          <div className="bg-[#6bbf4f] relative w-[100%] h-[200px] md:h-[250px] pl-8 py-2">
+          <div className="greenBg relative w-[100%] h-[200px] md:h-[250px] pl-8 py-2">
             <span className="absolute left-[22%] lg:left-6 top-[-1.6rem] lg:top-[-1.2rem]">
               <img
                 className="w-[12rem] md:w-[14rem]"
@@ -256,37 +256,155 @@ const Started = () => {
 
 const Grow = () => {
   return (
-    <div className=" bg-[#363f44] text-white py-16">
-      <p className="px-4 lg:px-24 text-white text-[2em] font-bold">
-        Grow your business with Duo!
-      </p>
-      <div className="py-6">
-        <div className="border-b-gray-500 border-b-2 lg:border-none">
-          <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 pb-12">
-            <div className="">
+    <div className="px-4 lg:px-24 text-white py-16">
+      <div className="greenBg px-4 py-6">
+        <div className="flex flex-row justify-between items-baseline ">
+          <div className="flex flex-col gap-4 w-[45%]">
+            <p className="text-[#fbb52f] uppercase text-sm">
+              Industries we serve
+            </p>
+            <p className="text-[1.5em] text-white font-semibold">
+              Our professional services customized for your industry
+            </p>
+          </div>
+
+          <div className="w-[45%]">
+            <p className="text-white text-base">
+              Our customized solutions also provide the highest
+              quality-perfection in whatever field we work in. No matter the
+              business We have you covered.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+          <div>
+            <img
+              src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img1.svg"
+              alt=""
+            />
+
+            <div>
+              <p>Logistics</p>
+              <p>Let us show you what we can do</p>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img2.svg"
+              alt=""
+            />
+            <div>
+              <p>Information</p>
+              <p>Let us show you how our experience</p>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img3.svg"
+              alt=""
+            />
+            <div>
+              <p>Event</p>
+              <p>Hold on a sec, and have a look</p>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img6.svg"
+              alt=""
+            />
+            <div>
+              <p>News</p>
+              <p>Let us show you how our experience</p>
+            </div>
+          </div>
+
+          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
+            <img
+              className="group-hover:animate-bounce duration-600 w-[4rem]"
+              src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img5.svg"
+              alt=""
+            />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p className="text-base font-semibold">NGO</p>
+              <p className="text-center text-sm">
+                We've worked for your niche market.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="py-6">
+          <div className="border-b-gray-500 border-b-2 lg:border-none">
+            <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 pb-12">
+              <div className="">
+                <p className="mb-3">
+                  <PiUserCircleBold size={40} color="#6bbf4f" />
+                </p>
+                <p className="text-xl font-semibold mb-2">
+                  New! Role-based access controls
+                </p>
+                <div className="text-base pt-2 flex flex-col gap-3">
+                  <p className="">
+                    Simplify your multi-tenant management routine with new
+                    subaccount role and access tagging features in the Duo Admin
+                    Panel—improving efficiency without compromising security.
+                  </p>
+                  <p className="underline  cursor-pointer">
+                    {" "}
+                    Check out the infographic
+                  </p>
+                  <p className="underline  cursor-pointer">
+                    {" "}
+                    Get the RBAC Admin Guide
+                  </p>
+                  <p className="underline  cursor-pointer">
+                    {" "}
+                    Read the announcement
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-3">
+                  {" "}
+                  <HiOutlineInformationCircle size={40} color="#6bbf4f" />{" "}
+                </p>
+                <p className="text-xl font-semibold mb-2">Knowledge base</p>
+                <div className="text-base flex flex-col gap-3 pt-2">
+                  <p className="">
+                    Quickly find the support you need to resolve your issue,
+                    with helpful documentation and relevant articles. Plus, you
+                    can view your support cases or create a new case.
+                  </p>
+                  <p className="underline cursor-pointer">
+                    Visit the Duo Help Center{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 py-12">
+            <div>
               <p className="mb-3">
-                <PiUserCircleBold size={40} color="#6bbf4f" />
+                {" "}
+                <PiShieldPlusBold size={40} color="#6bbf4f" />{" "}
               </p>
-              <p className="text-xl font-semibold mb-2">
-                New! Role-based access controls
-              </p>
-              <div className="text-base pt-2 flex flex-col gap-3">
+              <p className="text-xl font-semibold mb-2">Secure MSP Center </p>
+              <div className="text-base  pt-2 flex flex-col gap-3">
                 <p className="">
-                  Simplify your multi-tenant management routine with new
-                  subaccount role and access tagging features in the Duo Admin
-                  Panel—improving efficiency without compromising security.
+                  Interested in selling other SaaS-security products? Check out
+                  Secure MSP Center, our direct buying model for Umbrella and
+                  Secure Endpoint modelled after the success of the Duo Managed
+                  Service Provider program.{" "}
                 </p>
-                <p className="underline  cursor-pointer">
-                  {" "}
-                  Check out the infographic
-                </p>
-                <p className="underline  cursor-pointer">
-                  {" "}
-                  Get the RBAC Admin Guide
-                </p>
-                <p className="underline  cursor-pointer">
-                  {" "}
-                  Read the announcement
+                <p className="underline text-sm cursor-pointer">
+                  Simplify your buying experience
                 </p>
               </div>
             </div>
@@ -294,94 +412,57 @@ const Grow = () => {
             <div>
               <p className="mb-3">
                 {" "}
-                <HiOutlineInformationCircle size={40} color="#6bbf4f" />{" "}
+                <FaRegFileAlt size={40} color="#6bbf4f" />{" "}
               </p>
-              <p className="text-xl font-semibold mb-2">Knowledge base</p>
-              <div className="text-base flex flex-col gap-3 pt-2">
+              <p className="text-xl font-semibold mb-2">Duo documentation</p>
+              <div className="text-base pt-2 flex flex-col gap-3 ">
                 <p className="">
-                  Quickly find the support you need to resolve your issue, with
-                  helpful documentation and relevant articles. Plus, you can
-                  view your support cases or create a new case.
+                  Duo supports a wide range of devices and applications. Visit
+                  this page for detailed documentation, installation, and
+                  configuration information.{" "}
+                </p>
+                <p className="underline cursor-pointer">Get expert guidance </p>
+              </div>
+            </div>
+          </div>
+
+          <div className=" px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <p className="mb-3">
+                {" "}
+                <FaRegQuestionCircle size={40} color="#6bbf4f" />{" "}
+              </p>
+              <p className="text-xl font-semibold mb-2">
+                More questions? Connect with your partner manager{" "}
+              </p>
+              <p className="text-base pt-2 mb-2">
+                Email msp@duo.com for anything related to the MSP program or
+                your multi-tenant console, or if you need Partner Manager or
+                Sales Engineer support!{" "}
+              </p>
+            </div>
+
+            <div>
+              <p className="mb-3">
+                {" "}
+                <FiFilePlus size={25} color="#6bbf4f" />{" "}
+              </p>
+              <p className="text-xl md:text-lg font-semibold mb-2">
+                There’s more where that came from{" "}
+              </p>
+              <div className="text-base md:text-sm pt-4 flex flex-col gap-2">
+                <p className="">
+                  No matter the sale, we’ve got the materials to help you sell
+                  Duo, including training materials, collateral, and sales
+                  enablement resources.{" "}
                 </p>
                 <p className="underline cursor-pointer">
-                  Visit the Duo Help Center{" "}
+                  Access the brandfolder
                 </p>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 py-12">
-          <div>
-            <p className="mb-3">
-              {" "}
-              <PiShieldPlusBold size={40} color="#6bbf4f" />{" "}
-            </p>
-            <p className="text-xl font-semibold mb-2">Secure MSP Center </p>
-            <div className="text-base  pt-2 flex flex-col gap-3">
-              <p className="">
-                Interested in selling other SaaS-security products? Check out
-                Secure MSP Center, our direct buying model for Umbrella and
-                Secure Endpoint modelled after the success of the Duo Managed
-                Service Provider program.{" "}
-              </p>
-              <p className="underline text-sm cursor-pointer">
-                Simplify your buying experience
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <p className="mb-3">
-              {" "}
-              <FaRegFileAlt size={40} color="#6bbf4f" />{" "}
-            </p>
-            <p className="text-xl font-semibold mb-2">Duo documentation</p>
-            <div className="text-base pt-2 flex flex-col gap-3 ">
-              <p className="">
-                Duo supports a wide range of devices and applications. Visit
-                this page for detailed documentation, installation, and
-                configuration information.{" "}
-              </p>
-              <p className="underline cursor-pointer">Get expert guidance </p>
-            </div>
-          </div>
-        </div>
-
-        <div className=" px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <p className="mb-3">
-              {" "}
-              <FaRegQuestionCircle size={40} color="#6bbf4f" />{" "}
-            </p>
-            <p className="text-xl font-semibold mb-2">
-              More questions? Connect with your partner manager{" "}
-            </p>
-            <p className="text-base pt-2 mb-2">
-              Email msp@duo.com for anything related to the MSP program or your
-              multi-tenant console, or if you need Partner Manager or Sales
-              Engineer support!{" "}
-            </p>
-          </div>
-
-          <div>
-            <p className="mb-3">
-              {" "}
-              <FiFilePlus size={25} color="#6bbf4f" />{" "}
-            </p>
-            <p className="text-xl md:text-lg font-semibold mb-2">
-              There’s more where that came from{" "}
-            </p>
-            <div className="text-base md:text-sm pt-4 flex flex-col gap-2">
-              <p className="">
-                No matter the sale, we’ve got the materials to help you sell
-                Duo, including training materials, collateral, and sales
-                enablement resources.{" "}
-              </p>
-              <p className="underline cursor-pointer">Access the brandfolder</p>
-            </div>
-          </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

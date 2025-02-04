@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <div className="flex flex-col z-100">
       {/* TOP HEADER - Stays Static */}
-      <div className=" py-2 px-4 md:px-24 bg-[#6bbf4f] z-20">
+      <div className=" py-2 px-4 md:px-24 greenBg z-20">
         <span className="flex flex-row gap-1 text-xs items-center">
           <p className="text-white">If social networks shut down for 24hrs,</p>
           <Link className="text-[#fbb52f]">how will your business run?</Link>
@@ -53,14 +53,14 @@ const Header = () => {
               isFixed ? "hidden" : "flex"
             }`}
           >
-            <p className="text-[#6bbf4f]">Internship Opportunity:</p>
+            <p className="greenText">Internship Opportunity:</p>
             <p className="text-gray-400">Come intern with us to improve you.</p>
           </div>
           <div className="hidden lg:flex flex-row justify-center text-base font-[500]">
             {["Home", "About", "Services", "Solutions", "More"].map((item) => (
               <span
                 key={item}
-                className={`relative group flex flex-row items-center gap-2 px-5 py-2 justify-center cursor-pointer text-[#6bbf4f] hover:text-[#6bbf4f]/60 
+                className={`relative group flex flex-row items-center gap-2 px-5 py-2 justify-center cursor-pointer greenText hover:greenText/60 
       ${isFixed ? "border-none" : "border-t-[1px] border-t-gray-400"}`}
               >
                 <p>{item}</p>
@@ -96,13 +96,10 @@ const Header = () => {
           {/* BOTTOM */}
 
           <div className="md:border-l-gray-400 md:border-l flex flex-row gap-3">
-            <MdSearch
-              className="text-[#6bbf4f] pl-2 hidden md:block"
-              size={40}
-            />
+            <MdSearch className="greenText pl-2 hidden md:block" size={40} />
             {/* Menu Button */}
             <div
-              className="hover:text-[#6bbf4f] lg:hidden cursor-pointer"
+              className="hover:greenText lg:hidden cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <MdClose size={35} /> : <MdMenu size={35} />}
