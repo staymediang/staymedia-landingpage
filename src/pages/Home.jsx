@@ -258,7 +258,7 @@ const Grow = () => {
   return (
     <div className="px-4 lg:px-24 text-white py-16">
       <div className="greenBg py-12 px-8">
-        <div className="flex flex-row justify-between items-baseline ">
+        <div className="flex flex-row pb-8 justify-between items-baseline ">
           <div className="flex flex-col gap-4 w-[45%]">
             <p className="text-[#fbb52f] uppercase text-sm">
               Industries we serve
