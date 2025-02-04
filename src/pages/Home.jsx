@@ -278,48 +278,60 @@ const Grow = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-          <div>
+          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
             <img
+              className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img1.svg"
               alt=""
             />
 
-            <div>
-              <p>Logistics</p>
-              <p>Let us show you what we can do</p>
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p className="text-base font-semibold">Logistics</p>
+              <p className="text-center text-sm">
+                Let us show you what we can do
+              </p>
             </div>
           </div>
 
-          <div>
+          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
             <img
+              className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img2.svg"
               alt=""
             />
-            <div>
-              <p>Information</p>
-              <p>Let us show you how our experience</p>
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p className="text-base font-semibold">Information</p>
+              <p className="text-center text-sm">
+                Let us show you how our experience
+              </p>
             </div>
           </div>
 
-          <div>
+          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
             <img
+              className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img3.svg"
               alt=""
             />
-            <div>
-              <p>Event</p>
-              <p>Hold on a sec, and have a look</p>
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p className="text-base font-semibold">Event</p>
+              <p className="text-center text-sm">
+                Hold on a sec, and have a look
+              </p>
             </div>
           </div>
 
-          <div>
+          <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
             <img
+              className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img6.svg"
               alt=""
             />
-            <div>
-              <p>News</p>
-              <p>Let us show you how our experience</p>
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p className="text-base font-semibold">News</p>
+              <p className="text-center text-sm">
+                Let us show you how our experience
+              </p>
             </div>
           </div>
 
