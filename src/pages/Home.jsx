@@ -10,6 +10,9 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import FloatingLabel from "../components/FloatingLabel";
+import Modal from "react-modal";
+
+Modal.setAppElement("#root"); // Important for accessibility
 
 const Home = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -94,6 +97,9 @@ const Home = () => {
 };
 
 const Hero = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const mailchimpUrl = "http://eepurl.com/i9bMFw";
+
   return (
     <div className="px-4 lg:px-24 py-10 text-[#61615d] bg-[#fdfdfd]">
       {/* <span className="flex flex-row text-base md:text-sm uppercase gap-1 mb-10">
@@ -111,8 +117,28 @@ const Hero = () => {
             generating leads.
           </p>
           <div className="flex flex-row gap-2">
-            <button className="button-two">Join The WaitList</button>
-            {/* <button className="button-one">Become a partner</button> */}
+            <button onClick={() => setModalIsOpen(true)} className="button-two">
+              Join The WaitList
+            </button>
+
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={() => setModalIsOpen(false)}
+              className="bg-white z-[100] p-6 rounded-lg max-w-4xl mx-auto my-40"
+              overlayClassName="fixed inset-0 bg-gray-100/10 bg-opacity-70 flex justify-center items-center"
+            >
+              <button
+                className="text-red-500 float-right"
+                onClick={() => setModalIsOpen(false)}
+              >
+                ✖
+              </button>
+              <iframe
+                src={mailchimpUrl}
+                className="w-full h-[500px] border-none"
+                title="Mailchimp Signup"
+              />
+            </Modal>
           </div>
         </div>
         <div className="">
@@ -128,6 +154,9 @@ const Hero = () => {
 };
 
 const Why = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const mailchimpUrl = "http://eepurl.com/i9bMFw";
+
   return (
     <div className="">
       <div className="mt-8 lg:mt-16 pb-20 px-4 lg:px-24">
@@ -178,7 +207,30 @@ const Why = () => {
               <p>Excellent support service</p>
             </li>
           </ul>
-          <button className="button-two">Join the waitlist</button>
+          <div className="flex flex-row gap-2">
+            <button onClick={() => setModalIsOpen(true)} className="button-two">
+              Join The WaitList
+            </button>
+
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={() => setModalIsOpen(false)}
+              className="bg-white z-[100] p-6 rounded-lg max-w-4xl mx-auto my-40"
+              overlayClassName="fixed inset-0 bg-gray-100/10 bg-opacity-70 flex justify-center items-center"
+            >
+              <button
+                className="text-red-500 float-right"
+                onClick={() => setModalIsOpen(false)}
+              >
+                ✖
+              </button>
+              <iframe
+                src={mailchimpUrl}
+                className="w-full h-[500px] border-none"
+                title="Mailchimp Signup"
+              />
+            </Modal>
+          </div>
         </div>
       </div>
 
@@ -264,7 +316,7 @@ const Grow = () => {
           </div>
 
           <div className="w-[45%]">
-            <p className="text-white text-base">
+            <p className="text-white text-sm">
               Our customized solutions also provide the highest
               quality-perfection in whatever field we work in. No matter the
               business We have you covered.
@@ -273,7 +325,7 @@ const Grow = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img1.svg"
@@ -288,7 +340,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img2.svg"
@@ -302,7 +354,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img3.svg"
@@ -316,7 +368,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img6.svg"
@@ -330,7 +382,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-600/40 hover:border-gray-600/40 py-4 px-2 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img5.svg"
@@ -353,9 +405,7 @@ const Learn = () => {
   return (
     <div className="px-4 lg:px-24 py-16">
       <div className="w-full md:w-[70%] pb-8">
-        <h1 className="pb-6">
-          Learn more about the Duo Managed Service Provider Program
-        </h1>
+        <h1 className="pb-6">Learn more about the MSC Package</h1>
         <p className="text-base mb-16">
           Our no-barriers-to-entry model ensures there is no downtime to get
           products deployed. With no certifications or lengthy sign-up

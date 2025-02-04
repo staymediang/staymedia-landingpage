@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col z-100">
+    <div className="flex flex-col z-[90]">
       {/* TOP HEADER - Stays Static */}
       <div className=" py-2 px-4 md:px-24 greenBg z-20">
         <span className="flex flex-row gap-1 text-sm items-center">
@@ -49,8 +49,8 @@ const Header = () => {
         {/* MIDDLE */}
         <div className="flex flex-col gap-3">
           <div
-            className={`md:flex flex-row hidden justify-center items-center text-sm gap-1 ${
-              isFixed ? "hidden" : "flex"
+            className={`flex-row justify-center items-center text-sm gap-1 ${
+              isFixed ? "hidden" : "hidden md:flex"
             }`}
           >
             <p className="greenText">Internship Opportunity:</p>
@@ -60,7 +60,7 @@ const Header = () => {
             {["Home", "About", "Services", "Solutions", "More"].map((item) => (
               <span
                 key={item}
-                className={`relative group flex flex-row items-center gap-2 px-5 py-2 justify-center cursor-pointer greenText hover:greenText/60 
+                className={`relative group flex flex-row items-center hover:text-pink-500 gap-2 px-5 py-2 justify-center cursor-pointer greenText hover:greenText/60 
       ${isFixed ? "border-none" : "border-t-[1px] border-t-gray-400"}`}
               >
                 <p>{item}</p>
