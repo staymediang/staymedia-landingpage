@@ -257,7 +257,7 @@ const Started = () => {
 const Grow = () => {
   return (
     <div className="px-4 lg:px-24 text-white py-16">
-      <div className="greenBg px-4 py-6">
+      <div className="greenBg py-12 px-8">
         <div className="flex flex-row justify-between items-baseline ">
           <div className="flex flex-col gap-4 w-[45%]">
             <p className="text-[#fbb52f] uppercase text-sm">
@@ -277,7 +277,7 @@ const Grow = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols- py-12 px-8 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-  lg:grid-cols-5 gap-4">
           <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
