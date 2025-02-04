@@ -277,7 +277,7 @@ const Grow = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols- py-12 px-8 lg:grid-cols-5 gap-4">
           <div className="group hover:scale-95 hover:bg-white/20 py-4 px-4 border-[0.1px] border-[#c2c2c2] flex flex-col gap-6 items-center justify-center">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
