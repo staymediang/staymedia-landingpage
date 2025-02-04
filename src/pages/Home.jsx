@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from "react";
 import {
-  FaArrowUp,
   FaCheck,
   FaChevronDown,
   FaChevronUp,
   FaCommentDots,
   FaQuoteLeft,
-  FaRegFileAlt,
-  FaRegQuestionCircle,
   FaTimes,
+  FaWhatsapp,
 } from "react-icons/fa";
-import { FiFilePlus } from "react-icons/fi";
-import { PiUserCircleBold, PiShieldPlusBold } from "react-icons/pi";
-import { HiOutlineInformationCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import FloatingLabel from "../components/FloatingLabel";
 
@@ -53,9 +48,9 @@ const Home = () => {
       {showScroll && (
         <button
           onClick={scrollToTop}
-          className="fixed z-60 bottom-26 text-sm right-0 bg-gray-700 text-white px-4 py-1 shadow-md hover:bg-gray-500 transition-all"
+          className="fixed text-center flex flex-col items-center z-60 bottom-26 text-sm right-1 bg-gray-700 text-white px-3 py-1 shadow-md hover:bg-gray-500 transition-all"
         >
-          <FaChevronUp size={20} />
+          <FaChevronUp size={15} />
           <p>Top</p>
         </button>
       )}
@@ -67,7 +62,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold">Chat with us</h3>
             <button
               onClick={() => setShowChatbox(false)}
-              className="text-gray-500 hover:text-[#6bbf4f]"
+              className="text-gray-500 hover:text-[#009956]"
             >
               <FaTimes size={18} />
             </button>
@@ -79,7 +74,7 @@ const Home = () => {
             className="w-full p-2 mt-2 border rounded-sm text-sm"
             placeholder="Type your message..."
           ></textarea>
-          <button className="mt-2 w-full bg-[#6bbf4f] text-white p-2 rounded-md hover:bg-[#6bbf4f]/70 transition-all">
+          <button className="mt-2 w-full greenBg text-white p-2 rounded-md hover:bg-[#009956]/70 transition-all">
             Send
           </button>
         </div>
@@ -89,9 +84,9 @@ const Home = () => {
       {!showChatbox && (
         <button
           onClick={() => setShowChatbox(true)}
-          className="fixed z-60 bottom-6 right-4 bg-green-600 text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
+          className="fixed z-60 bottom-6 right-4 greenBg text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
         >
-          <FaCommentDots size={20} />
+          <FaWhatsapp size={20} />
         </button>
       )}
     </div>

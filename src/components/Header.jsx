@@ -25,7 +25,7 @@ const Header = () => {
     <div className="flex flex-col z-100">
       {/* TOP HEADER - Stays Static */}
       <div className=" py-2 px-4 md:px-24 greenBg z-20">
-        <span className="flex flex-row gap-1 text-xs items-center">
+        <span className="flex flex-row gap-1 text-sm items-center">
           <p className="text-white">If social networks shut down for 24hrs,</p>
           <Link className="text-[#fbb52f]">how will your business run?</Link>
         </span>
@@ -49,7 +49,7 @@ const Header = () => {
         {/* MIDDLE */}
         <div className="flex flex-col gap-3">
           <div
-            className={`flex flex-row justify-center items-center text-sm gap-1 ${
+            className={`md:flex flex-row hidden justify-center items-center text-sm gap-1 ${
               isFixed ? "hidden" : "flex"
             }`}
           >
