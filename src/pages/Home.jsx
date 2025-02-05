@@ -117,11 +117,14 @@ const Hero = () => {
             generating leads.
           </p>
           <div className="flex flex-row gap-2">
-            <button onClick={() => setModalIsOpen(true)} className="button-two">
+            <button
+              onClick={() => window.open(mailchimpUrl, "_blank")}
+              className="button-two"
+            >
               Join The WaitList
             </button>
 
-            <Modal
+            {/* <Modal
               isOpen={modalIsOpen}
               onRequestClose={() => setModalIsOpen(false)}
               className="bg-white z-[100] p-6 rounded-lg max-w-4xl mx-auto my-40"
@@ -138,7 +141,7 @@ const Hero = () => {
                 className="w-full h-[500px] border-none"
                 title="Mailchimp Signup"
               />
-            </Modal>
+            </Modal> */}
           </div>
         </div>
         <div className="">
@@ -172,7 +175,16 @@ const Why = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 px-4 lg:px-24 pb-24">
         <div>
-          <video src="https://fast.wistia.com/embed/medias/9dqe6nrt8z.jsonp"></video>
+          {/* <video src="https://fast.wistia.com/embed/medias/9dqe6nrt8z.jsonp"></video> */}
+          <iframe
+            src="https://fast.wistia.com/embed/medias/9dqe6nrt8z.jsonp"
+            allow="autoplay; fullscreen"
+            allowTransparency="true"
+            frameBorder="0"
+            scrolling="no"
+            className="w-full h-[315px] md:h-[450px]"
+            title="Wistia Video"
+          ></iframe>
         </div>
         <div className="">
           <ul className="flex flex-col text-lg md:text-base gap-2.5 items-start pb-6">
@@ -208,28 +220,12 @@ const Why = () => {
             </li>
           </ul>
           <div className="flex flex-row gap-2">
-            <button onClick={() => setModalIsOpen(true)} className="button-two">
+            <button
+              onClick={() => window.open(mailchimpUrl, "_blank")}
+              className="button-two"
+            >
               Join The WaitList
             </button>
-
-            <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={() => setModalIsOpen(false)}
-              className="bg-white z-[100] p-6 rounded-lg max-w-4xl mx-auto my-40"
-              overlayClassName="fixed inset-0 bg-gray-100/10 bg-opacity-70 flex justify-center items-center"
-            >
-              <button
-                className="text-red-500 float-right"
-                onClick={() => setModalIsOpen(false)}
-              >
-                ✖
-              </button>
-              <iframe
-                src={mailchimpUrl}
-                className="w-full h-[500px] border-none"
-                title="Mailchimp Signup"
-              />
-            </Modal>
           </div>
         </div>
       </div>
@@ -414,8 +410,8 @@ const Learn = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-start gap-12">
+        <div className="">
           <img
             src="https://png.pngtree.com/png-clipart/20221006/ourmid/pngtree-calendar-3d-icon-render-png-image_6275730.png"
             alt=""
@@ -423,11 +419,11 @@ const Learn = () => {
         </div>
 
         <div>
-          <img
+          {/* <img
             className="pb-4"
             src="https://duo.com/assets/img/content-text/circle_3.png"
             alt=""
-          />
+          /> */}
           <p className="text-[#303030] font-bold text-2xl pb-3">
             Upcoming events
           </p>
@@ -541,8 +537,8 @@ const Contact = () => {
       <div className="w-[100%] md:w-[50%]">
         <h1 className="pb-8">Contact us for a demo</h1>
         <p className="pb-8">
-          Find out if Duo is right for your business. Let’s schedule a time to
-          walk you through the MSP Program and product demonstration.
+          Find out if MCS is right for your business. Let’s schedule a time to
+          walk you through the MCS Package and product demonstration.
         </p>
         <div className="text-sm">
           <p className="text-right pb-6 text-base md:text-sm"> * Required</p>
@@ -587,7 +583,7 @@ const Contact = () => {
           <div className="flex flex-row gap-2 items-start pb-8">
             <input className="mt-1 w-5 h-5" type="checkbox" name="" id="" />
             <span className="flex flex-row flex-wrap gap-1 items-center text-xs">
-              <p>By applying to the MSP Program I agree to the MSP Program </p>
+              <p>By applying to the MCS Package I agree to the MCS Package </p>
               <Link className="underline">terms and conditions.</Link>
             </span>
           </div>
