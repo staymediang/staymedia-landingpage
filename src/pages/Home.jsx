@@ -171,7 +171,7 @@ const Why = () => {
       <div className="mt-16 lg:mt-24 pb-8 px-4 lg:px-24">
         <h1 className="mb-6">Why ICS Package</h1>
         <p className="w-full text-lg md:text-base md:w-[70%]">
-          The Marketing-Community-Sales Package enables our prospective clients
+          The Identity-Community-Sales Package enables our prospective clients
           and customers to outsource these aspect of their online marketing to
           professionals like STAY MEDIA for certain period. Grow your
           follower-base and guaranteed remarkable sales from only trusted
