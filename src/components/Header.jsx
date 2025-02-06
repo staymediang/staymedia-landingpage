@@ -27,9 +27,7 @@ const Header = () => {
       <div className=" py-2 px-4 md:px-24 greenBg z-20">
         <span className="flex flex-row gap-1 text-sm items-center">
           <p className="text-white">If social networks shut down for 24hrs,</p>
-          <Link className="text-[#fcb52f] bg-[#88d39f]">
-            how will your business run?
-          </Link>
+          <Link className="text-[#fcb52f]">how will your business run?</Link>
         </span>
       </div>
 
