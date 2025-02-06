@@ -619,4 +619,4 @@ const Better = () => {
   );
 };
 
-ex
+export default Home;
