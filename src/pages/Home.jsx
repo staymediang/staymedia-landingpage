@@ -277,7 +277,7 @@ const Why = () => {
 
 const Started = () => {
   return (
-    <div className="px-4 lg:px-24 place-items-center py+-14 lg:py-0 grid grid-cols-1 md:grid-cols-6 gap-8">
+    <div className="px-4 lg:px-24 place-items-center py-14 lg:py-4 grid grid-cols-1 md:grid-cols-6 gap-8">
       <div className=" md:col-span-2">
         <img
           src="https://duo.com/assets/img/content-text/Duo-MSP-Playbook.png"
@@ -303,8 +303,8 @@ const Grow = () => {
   return (
     <div className="px-4 lg:px-24 text-white pt-28 pb-20">
       <div className="greenBg py-12 px-8">
-        <div className="flex flex-row gap-8 lg:flex-row pb-8 justify-between items-baseline ">
-          <div className="flex flex-col gap-2 w-[45%]">
+        <div className="flex flex-col gap-8 lg:flex-row pb-8 justify-between items-baseline ">
+          <div className="flex flex-col gap-2 w-full lg:w-[45%]">
             <p className="text-[#fbb52f] uppercase text-sm">
               Industries we serve
             </p>
@@ -313,7 +313,7 @@ const Grow = () => {
             </p>
           </div>
 
-          <div className="w-[45%]">
+          <div className="w-full lg:w-[45%]">
             <p className="text-white text-sm">
               Our customized solutions also provide the highest
               quality-perfection in whatever field we work in. No matter the
@@ -619,4 +619,4 @@ const Better = () => {
   );
 };
 
-export default Home;
+ex
