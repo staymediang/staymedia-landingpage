@@ -85,12 +85,18 @@ const Home = () => {
 
       {/* Chatbox Icon (Reappear after closing the popup) */}
       {!showChatbox && (
-        <button
-          onClick={() => setShowChatbox(true)}
-          className="fixed z-60 bottom-6 right-4 greenBg text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
-        >
-          <FaWhatsapp size={20} />
-        </button>
+        <div>
+          <button
+            onClick={() => setShowChatbox(true)}
+            className="fixed z-60 bottom-6 right-4 greenBg text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
+          >
+            <FaWhatsapp size={20} />
+          </button>
+          <span className="text-xs bg-gray-50 w-fit flex flex-row items-center gap-1 px-3 py-2 rounded-lg fixed right-17 z-60 bottom-7">
+            <p>Need help?</p>
+            <p className="font-semibold">Chat with us</p>
+          </span>
+        </div>
       )}
     </div>
   );
@@ -230,7 +236,7 @@ const Why = () => {
         </div>
       </div>
 
-      <div className="bg-[#f5f6f8] relative px-0 lg:pl-24 grid grid-cols-1 md:grid-cols-6 gap-14">
+      {/* <div className="bg-[#f5f6f8] relative px-0 lg:pl-24 grid grid-cols-1 md:grid-cols-6 gap-14">
         <div className="md:col-span-3 px-4 lg:px-0 py-14">
           <p className="absolute top-[-1.8rem] ">
             <FaQuoteLeft color="#009956" size={55} />
@@ -264,7 +270,7 @@ const Why = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -279,18 +285,14 @@ const Started = () => {
         />
       </div>
       <div className="md:col-span-4">
-        <h1 className="pb-8">Get started with Duo MSP</h1>
+        <h1 className="pb-8">Need an in-depth understanding of MCS.</h1>
         <p className="pb-6 text-lg md:text-base">
-          Duo's Managed Service Provider program delivers security solutions
-          that are simple to set up and can easily scale with your business as a
-          service. Whether supporting you in your first install, helping you
-          troubleshoot a customer problem, or powering you to land the next
-          winning deal, our team, and access to our extensive documentation
-          library are available to you any time, anywhere. After all: your
-          success is our success.
+          Zero worries, we prepared a document for you to help you get started
+          and learn more about why MCS is the exact solution your business needs
+          to drive in this digital space
         </p>
         <p className="underline cursor-pointer text-xl md:text-lg">
-          Get the playbook
+          Download PDF
         </p>
       </div>
     </div>
@@ -425,26 +427,26 @@ const Learn = () => {
             alt=""
           /> */}
           <p className="text-[#303030] font-bold text-2xl pb-3">
-            Upcoming events
+            Drive more sales with MCS.
           </p>
           <div className="text-base pt-2 flex flex-col gap-4">
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Managed Service Summit London - Sept 11
+              Unique identification
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              TeamLogic IT Owner's Summit - Sept 16-19
+              Brand Tone
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              MSP Global - Oct 9-10
+              Community Growth
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Kaseya DattoCon Miami - Oct 28-30
+              Community Influence
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              IT Nation Connect - Nov 6-8
+              Sales Strategy
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Kaseya DattoCon Asia-Pacific - Nov 12-14
+              Sales Acquisition
             </p>
           </div>
         </div>
@@ -458,35 +460,34 @@ const FAQS = () => {
 
   const faqsData = [
     {
-      question:
-        "What difference(s) are there between an MSP Duo Account and a regular Duo Commercial Account?",
-      answer:
-        "The MSP Duo Account you receive as a partner offers multi-tenancy so that you can manage your client accounts easily. Other than this, the account types have the same feature/functionality, across all editions.",
+      question: "Can I set a specific during I would love to use MCS",
+      // answer:
+      // "The MSP Duo Account you receive as a partner offers multi-tenancy so that you can manage your client accounts easily. Other than this, the account types have the same feature/functionality, across all editions.",
     },
-    {
-      question:
-        "Do I have access to a Partner Account team after I’ve signed up?",
-      answer:
-        "Yes – You will be aligned with a Partner Account Manager, who has access to Business Development and Technical resources to ensure you’re getting the most out of your partnership with Duo.",
-    },
-    {
-      question:
-        "What’s the catch? Are there any initial barriers to becoming an MSP Partner?",
-      answer:
-        "No catch! Partnerships with the Duo MSP Program are free and do not require any sales commitments (or minimums). There are also no special certifications required to participate.",
-    },
-    {
-      question:
-        "Does the MSP Partner Program offer both monthly and annual billing options?",
-      answer:
-        "Our program bills monthly, based on the total number of billable users in your console at the end of each month.",
-    },
-    {
-      question:
-        "Where do I find resources to train my team? Or who can I contact if I have additional questions?",
-      answer:
-        "As a Duo MSP Partner, you can reach out to your Partner Manager, or msp@duo.com, for assistance. Not quite ready to become a partner? You can reach out to our team at mspadr@duosecurity.com for answers to questions you may have and to help get signed up!",
-    },
+    // {
+    //   question:
+    //     "Do I have access to a Partner Account team after I’ve signed up?",
+    //   answer:
+    //     "Yes – You will be aligned with a Partner Account Manager, who has access to Business Development and Technical resources to ensure you’re getting the most out of your partnership with Duo.",
+    // },
+    // {
+    //   question:
+    //     "What’s the catch? Are there any initial barriers to becoming an MSP Partner?",
+    //   answer:
+    //     "No catch! Partnerships with the Duo MSP Program are free and do not require any sales commitments (or minimums). There are also no special certifications required to participate.",
+    // },
+    // {
+    //   question:
+    //     "Does the MSP Partner Program offer both monthly and annual billing options?",
+    //   answer:
+    //     "Our program bills monthly, based on the total number of billable users in your console at the end of each month.",
+    // },
+    // {
+    //   question:
+    //     "Where do I find resources to train my team? Or who can I contact if I have additional questions?",
+    //   answer:
+    //     "As a Duo MSP Partner, you can reach out to your Partner Manager, or msp@duo.com, for assistance. Not quite ready to become a partner? You can reach out to our team at mspadr@duosecurity.com for answers to questions you may have and to help get signed up!",
+    // },
   ];
 
   const toggleFAQ = (index) => {
@@ -607,7 +608,12 @@ const Better = () => {
         <p className="text-[2.8rem] md:text-[4.8rem] lg:text-[5rem] leading-10 md:leading-18 text-white font-bold">
           We're better together. Become a partner today.
         </p>
-        <button className="button-two mt-8"> Find out more</button>
+        <button
+          onClick={() => window.open(mailchimpUrl, "_blank")}
+          className="button-two mt-8 capitalize"
+        >
+          Join the waitlist
+        </button>
       </div>
     </div>
   );
