@@ -115,9 +115,9 @@ const Hero = () => {
       </span> */}
       <div className="flex flex-col-reverse md:flex-row  gap-4 ">
         <div className="flex flex-col gap-2 w-full md:w-[60%]">
-          <h1 className="mb-4">MCS Package</h1>
+          <h1 className="mb-4">ICS Package</h1>
           <p className="text-lg md:text-base mb-4">
-            The MCS Package offers a modern approach to driving exceptional
+            The ICS Package offers a modern approach to driving exceptional
             business sales. A all-in-one solution that allows STAY MEDIA handles
             the online marketing of your business while driving more sales or
             generating leads.
@@ -169,7 +169,7 @@ const Why = () => {
   return (
     <div className="">
       <div className="mt-16 lg:mt-24 pb-8 px-4 lg:px-24">
-        <h1 className="mb-6">Why MCS Package</h1>
+        <h1 className="mb-6">Why ICS Package</h1>
         <p className="w-full text-lg md:text-base md:w-[70%]">
           The Marketing-Community-Sales Package enables our prospective clients
           and customers to outsource these aspect of their online marketing to
@@ -285,10 +285,10 @@ const Started = () => {
         />
       </div>
       <div className="md:col-span-4">
-        <h1 className="pb-8">Need an in-depth understanding of MCS.</h1>
+        <h1 className="pb-8">Need an in-depth understanding of ICS.</h1>
         <p className="pb-6 text-lg md:text-base">
           Zero worries, we prepared a document for you to help you get started
-          and learn more about why MCS is the exact solution your business needs
+          and learn more about why ICS is the exact solution your business needs
           to drive in this digital space
         </p>
         <p className="underline cursor-pointer text-xl md:text-lg">
@@ -403,7 +403,7 @@ const Learn = () => {
   return (
     <div className="px-4 lg:px-24 py-16">
       <div className="w-full md:w-[70%] pb-8">
-        <h1 className="pb-6">Learn more about the MSC Package</h1>
+        <h1 className="pb-6">Learn more about the ICS Package</h1>
         <p className="text-base mb-16">
           Our no-barriers-to-entry model ensures there is no downtime to get
           products deployed. With no certifications or lengthy sign-up
@@ -460,7 +460,7 @@ const FAQS = () => {
 
   const faqsData = [
     {
-      question: "Can I set a specific during I would love to use MCS",
+      question: "Can I set a specific during I would love to use ICS",
       // answer:
       // "The MSP Duo Account you receive as a partner offers multi-tenancy so that you can manage your client accounts easily. Other than this, the account types have the same feature/functionality, across all editions.",
     },
@@ -538,8 +538,8 @@ const Contact = () => {
       <div className="w-[100%] md:w-[50%]">
         <h1 className="pb-8">Contact us for a demo</h1>
         <p className="pb-8">
-          Find out if MCS is right for your business. Let’s schedule a time to
-          walk you through the MCS Package and product demonstration.
+          Find out if ICS is right for your business. Let’s schedule a time to
+          walk you through the ICS Package and product demonstration.
         </p>
         <div className="text-sm">
           <p className="text-right pb-6 text-base md:text-sm"> * Required</p>
