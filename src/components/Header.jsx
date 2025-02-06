@@ -27,7 +27,9 @@ const Header = () => {
       <div className=" py-2 px-4 md:px-24 greenBg z-20">
         <span className="flex flex-row gap-1 text-sm items-center">
           <p className="text-white">If social networks shut down for 24hrs,</p>
-          <Link className="text-[#fbb52f]">how will your business run?</Link>
+          <Link className="text-[#fcb52f] bg-[#88d39f]">
+            how will your business run?
+          </Link>
         </span>
       </div>
 
@@ -60,8 +62,12 @@ const Header = () => {
             {["Home", "About", "Services", "Solutions", "More"].map((item) => (
               <span
                 key={item}
-                className={`relative group flex flex-row items-center hover:text-pink-500 gap-2 px-5 py-2 justify-center cursor-pointer greenText hover:greenText/60 
-      ${isFixed ? "border-none" : "border-t-[1px] border-t-gray-400"}`}
+                className={`relative group flex flex-row items-center  gap-2 px-5 py-2 justify-center cursor-pointer greenText hover:greenText/60 
+      ${
+        isFixed
+          ? "border-none hover:text-pink-500"
+          : "border-t-[1px] border-t-gray-400"
+      }`}
               >
                 <p>{item}</p>
                 {/* Animated Border */}
@@ -88,7 +94,7 @@ const Header = () => {
               <p>Have any questions?</p>
               <span className="flex flex-row items-center gap-1">
                 <p>Free:</p>
-                <Link className="text-[#fbb52f]">(+234) 802 325 0782</Link>
+                <Link className="text-[#fcb52f]">(+234) 802 325 0782</Link>
               </span>
             </div>
           </div>

@@ -36,10 +36,10 @@ body {
 }
 
 .hbutton-two {
-  background-color: #009956;
+  background-color: #009e3d;
   color: white;
   padding: 6px 18px;
-  border: 1px solid #009956;
+  border: 1px solid #009e3d;
   border-radius: 4px;
   font-size: 12px;
 }
@@ -53,10 +53,10 @@ body {
 }
 
 .button-two {
-  background-color: #009956;
+  background-color: #009e3d;
   color: white;
   padding: 16px 24px;
-  border: 1px solid #009956;
+  border: 1px solid #009e3d;
   border-radius: 4px;
   font-size: 14px;
 }
@@ -74,7 +74,7 @@ body {
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   background-color: white;
-  color: #009956;
+  color: #009e3d;
 }
 
 h1 {
@@ -95,11 +95,11 @@ h1 {
 }
 
 .greenBg {
-  background-color: #009956;
+  background-color: #009e3d;
 }
 
 .greenText {
-  color: #009956;
+  color: #009e3d;
 }
 /*
 button:hover {

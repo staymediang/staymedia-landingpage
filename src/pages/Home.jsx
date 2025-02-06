@@ -107,7 +107,7 @@ const Hero = () => {
   const mailchimpUrl = "http://eepurl.com/i9bMFw";
 
   return (
-    <div className="px-4 lg:px-24 py-10 text-[#61615d] bg-[#fdfdfd]">
+    <div className="px-4 lg:px-24 pt-18 text-[#61615d] bg-[#fdfdfd]">
       {/* <span className="flex flex-row text-base md:text-sm uppercase gap-1 mb-10">
         <p className="underline">partnerships</p>
         <p>/ duo</p>
@@ -168,7 +168,7 @@ const Why = () => {
 
   return (
     <div className="">
-      <div className="mt-8 lg:mt-16 pb-20 px-4 lg:px-24">
+      <div className="mt-16 lg:mt-24 pb-8 px-4 lg:px-24">
         <h1 className="mb-6">Why MCS Package</h1>
         <p className="w-full text-lg md:text-base md:w-[70%]">
           The Marketing-Community-Sales Package enables our prospective clients
@@ -179,7 +179,7 @@ const Why = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 px-4 lg:px-24 pb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 px-4 lg:px-24">
         <div>
           {/* <video src="https://fast.wistia.com/embed/medias/9dqe6nrt8z.jsonp"></video> */}
           <iframe
@@ -277,7 +277,7 @@ const Why = () => {
 
 const Started = () => {
   return (
-    <div className="px-4 lg:px-24 place-items-center py-20 grid grid-cols-1 md:grid-cols-6 gap-8">
+    <div className="px-4 lg:px-24 place-items-center py+-14 lg:py-0 grid grid-cols-1 md:grid-cols-6 gap-8">
       <div className=" md:col-span-2">
         <img
           src="https://duo.com/assets/img/content-text/Duo-MSP-Playbook.png"
@@ -301,7 +301,7 @@ const Started = () => {
 
 const Grow = () => {
   return (
-    <div className="px-4 lg:px-24 text-white py-16">
+    <div className="px-4 lg:px-24 text-white pt-28 pb-20">
       <div className="greenBg py-12 px-8">
         <div className="flex flex-row gap-8 lg:flex-row pb-8 justify-between items-baseline ">
           <div className="flex flex-col gap-2 w-[45%]">
@@ -427,26 +427,26 @@ const Learn = () => {
             alt=""
           /> */}
           <p className="text-[#303030] font-bold text-2xl pb-3">
-            Drive more sales with MCS.
+            Upcoming events
           </p>
           <div className="text-base pt-2 flex flex-col gap-4">
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Unique identification
+              Managed Service Summit London - Sept 11
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Brand Tone
+              TeamLogic IT Owner's Summit - Sept 16-19
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Community Growth
+              MSP Global - Oct 9-10
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Community Influence
+              Kaseya DattoCon Miami - Oct 28-30
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Sales Strategy
+              IT Nation Connect - Nov 6-8
             </p>
             <p className="underline cursor-pointer leading-5.5 text-[#5b6063]">
-              Sales Acquisition
+              Kaseya DattoCon Asia-Pacific - Nov 12-14
             </p>
           </div>
         </div>
