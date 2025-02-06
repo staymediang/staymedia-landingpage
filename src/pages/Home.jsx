@@ -323,7 +323,7 @@ const Grow = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img1.svg"
@@ -338,7 +338,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img2.svg"
@@ -352,7 +352,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img3.svg"
@@ -366,7 +366,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img6.svg"
@@ -380,7 +380,7 @@ const Grow = () => {
             </div>
           </div>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-500">
+          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img5.svg"
