@@ -276,7 +276,7 @@ const Why = () => {
 
 const Started = () => {
   return (
-    <div className="px-4 lg:px-24 place-items-center py-14 lg:py-4 grid grid-cols-1 md:grid-cols-6 gap-8">
+    <div className="px-4 lg:px-24 place-items-center pt-18 lg:pt-24 grid grid-cols-1 md:grid-cols-6 gap-8">
       <div className=" md:col-span-2">
         <img
           src="https://duo.com/assets/img/content-text/Duo-MSP-Playbook.png"
