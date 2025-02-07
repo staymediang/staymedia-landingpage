@@ -179,17 +179,16 @@ const Why = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 px-4 lg:px-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 lg:px-24">
         <div>
-          {/* <video src="https://fast.wistia.com/embed/medias/9dqe6nrt8z.jsonp"></video> */}
           <iframe
-            src="https://fast.wistia.com/embed/medias/9dqe6nrt8z.jsonp"
-            allow="autoplay; fullscreen"
-            allowTransparency="true"
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/bAXuGTUifmE?si=lqpKiLoxIi45KWy-"
+            title="YouTube video player"
             frameBorder="0"
-            scrolling="no"
-            className="w-full h-[315px] md:h-[450px]"
-            title="Wistia Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           ></iframe>
         </div>
         <div className="">
