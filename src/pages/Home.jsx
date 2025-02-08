@@ -148,7 +148,7 @@ const Hero = () => {
             >
               Join The WaitList
             </button>
-            <div className="button-one flex items-center justify-center w-full md:w-auto px-4 py-2">
+            <div className="button-one flex items-center justify-center w-full md:w-auto px-8 font-semibold">
               {formatTime(timeLeft)}
             </div>
           </div>
