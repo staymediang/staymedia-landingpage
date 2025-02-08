@@ -106,6 +106,25 @@ const Hero = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const mailchimpUrl = "http://eepurl.com/i9bMFw";
 
+  const initialTime = 60 * 60; // 1 hour in seconds
+  const [timeLeft, setTimeLeft] = useState(initialTime);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Format time into HH:MM:SS
+  const formatTime = (seconds) => {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  };
+
   return (
     <div className="px-4 lg:px-24 pt-18 text-[#61615d] bg-[#fdfdfd]">
       {/* <span className="flex flex-row text-base md:text-sm uppercase gap-1 mb-10">
@@ -129,25 +148,9 @@ const Hero = () => {
             >
               Join The WaitList
             </button>
-
-            {/* <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={() => setModalIsOpen(false)}
-              className="bg-white z-[100] p-6 rounded-lg max-w-4xl mx-auto my-40"
-              overlayClassName="fixed inset-0 bg-gray-100/10 bg-opacity-70 flex justify-center items-center"
-            >
-              <button
-                className="text-red-500 float-right"
-                onClick={() => setModalIsOpen(false)}
-              >
-                ✖
-              </button>
-              <iframe
-                src={mailchimpUrl}
-                className="w-full h-[500px] border-none"
-                title="Mailchimp Signup"
-              />
-            </Modal> */}
+            <div className="button-one flex items-center justify-center w-full md:w-auto px-4 py-2">
+              {formatTime(timeLeft)}
+            </div>
           </div>
         </div>
         <div className="">
@@ -322,7 +325,10 @@ const Grow = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
+          <Link
+            to={"https://staymedia.ng/case-studies/"}
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+          >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img1.svg"
@@ -335,9 +341,12 @@ const Grow = () => {
                 Let us show you what we can do
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
+          <Link
+            to={"https://staymedia.ng/case-studies/"}
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+          >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img2.svg"
@@ -349,9 +358,12 @@ const Grow = () => {
                 Let us show you how our experience
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
+          <Link
+            to={"https://staymedia.ng/case-studies/"}
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+          >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img3.svg"
@@ -363,9 +375,12 @@ const Grow = () => {
                 Hold on a sec, and have a look
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
+          <Link
+            to={"https://staymedia.ng/case-studies/"}
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+          >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img6.svg"
@@ -377,9 +392,12 @@ const Grow = () => {
                 Let us show you how our experience
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200">
+          <Link
+            to={"https://staymedia.ng/case-studies/"}
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+          >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
               src="https://staymedia.ng/wp-content/uploads/2020/01/stay-web-img5.svg"
@@ -391,7 +409,7 @@ const Grow = () => {
                 We've worked for your niche market.
               </p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
