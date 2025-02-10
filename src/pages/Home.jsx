@@ -122,7 +122,10 @@ const Hero = () => {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
-    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
+      2,
+      "0"
+    )}:${String(secs).padStart(2, "0")}`;
   };
 
   return (
@@ -134,22 +137,26 @@ const Hero = () => {
       </span> */}
       <div className="flex flex-col-reverse md:flex-row  gap-4 ">
         <div className="flex flex-col gap-2 w-full md:w-[60%]">
-          <h1 className="mb-4">ICS Package</h1>
+          <h1 className="mb-4">
+            Convoke ICS – The Complete Solution for Business Growth
+          </h1>
           <p className="text-lg md:text-base mb-4">
-            The ICS Package offers a modern approach to driving exceptional
-            business sales. A all-in-one solution that allows STAY MEDIA handles
-            the online marketing of your business while driving more sales or
-            generating leads.
+            Growing a business takes time. Convoke ICS offers everything you
+            need to grow your business online. A 3-way solution to business
+            success: identity, community, and sales.
           </p>
           <div className="flex flex-row gap-2">
             <button
               onClick={() => window.open(mailchimpUrl, "_blank")}
               className="button-two"
             >
-              Join The WaitList
+              Request a demo
             </button>
-            <div className="button-one flex items-center justify-center w-full md:w-auto px-8 font-semibold">
-              {formatTime(timeLeft)}
+            <div className="flex flex-row items-end gap-2">
+              <div className="button-one flex items-center justify-center w-full md:w-auto px-8 font-semibold">
+                {formatTime(timeLeft)}
+              </div>
+              <p className="text-xs">Limited slots remaining</p>
             </div>
           </div>
         </div>
@@ -172,13 +179,12 @@ const Why = () => {
   return (
     <div className="">
       <div className="mt-16 lg:mt-24 pb-8 px-4 lg:px-24">
-        <h1 className="mb-6">Why ICS Package</h1>
+        <h1 className="mb-6">Why Convoke ICS</h1>
         <p className="w-full text-lg md:text-base md:w-[70%]">
-          The Identity-Community-Sales Package enables our prospective clients
-          and customers to outsource these aspect of their online marketing to
-          professionals like STAY MEDIA for certain period. Grow your
-          follower-base and guaranteed remarkable sales from only trusted
-          community.
+          Your brand is more than just a name. It’s how people recognize, trust,
+          and connect with you. The Convoke ICS helps you establish a strong
+          presence, build a loyal community, and turn loyal followers into
+          buying customers.
         </p>
       </div>
 
@@ -200,25 +206,31 @@ const Why = () => {
               <p className="greenBg text-center border-[#6bbf4f] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
-              <p>Conveniently manage all your customers in one console</p>
+              <p>Establishing a strong identity</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
               <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
-              <p>Pay-as-you-go pricing to scale with your business</p>
+              <p> Building active communities</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
               <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
-              <p>Lower hassle</p>
+              <p>Excellent Sales Acquisition Strategy</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
               <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
                 <FaCheck color="#fff" size={12} />
               </p>
               <p>Faster ROI for your business</p>
+            </li>
+            <li className="flex flex-row gap-2 items-start md:items-center justify-start">
+              <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
+                <FaCheck color="#fff" size={12} />
+              </p>
+              <p>Pay-as-you-go model</p>
             </li>
             <li className="flex flex-row gap-2 items-start md:items-center justify-start">
               <p className="greenBg text-center border-[#009956] mt-2 p-1 h-fit w-fit rounded-full">
@@ -232,7 +244,7 @@ const Why = () => {
               onClick={() => window.open(mailchimpUrl, "_blank")}
               className="button-two"
             >
-              Join The WaitList
+              Request a demo
             </button>
           </div>
         </div>
@@ -287,11 +299,11 @@ const Started = () => {
         />
       </div>
       <div className="md:col-span-4">
-        <h1 className="pb-8">Need an in-depth understanding of ICS.</h1>
+        <h1 className="pb-8">Need an in-depth understanding of Convoke ICS.</h1>
         <p className="pb-6 text-lg md:text-base">
           Zero worries, we prepared a document for you to help you get started
-          and learn more about why ICS is the exact solution your business needs
-          to drive in this digital space
+          and learn more about why MCS is the exact solution your business needs
+          to drive in this digital space.
         </p>
         <p className="underline cursor-pointer text-xl md:text-lg">
           Download PDF
@@ -307,7 +319,7 @@ const Grow = () => {
       <div className="greenBg py-12 px-8">
         <div className="flex flex-col gap-8 lg:flex-row pb-8 justify-between items-baseline ">
           <div className="flex flex-col gap-2 w-full lg:w-[45%]">
-            <p className="text-[#fbb52f] uppercase text-sm">
+            <p className="text-[#fcb52f] uppercase text-sm">
               Industries we serve
             </p>
             <p className="text-[1.8em] leading-8 text-white font-semibold">
@@ -327,7 +339,7 @@ const Grow = () => {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -345,7 +357,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -362,7 +374,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -379,7 +391,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -396,7 +408,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-gray-100/10 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -420,12 +432,10 @@ const Learn = () => {
   return (
     <div className="px-4 lg:px-24 py-16">
       <div className="w-full md:w-[70%] pb-8">
-        <h1 className="pb-6">Learn more about the ICS Package</h1>
+        <h1 className="pb-6">Learn more about Convoke ICS</h1>
         <p className="text-base mb-16">
-          Our no-barriers-to-entry model ensures there is no downtime to get
-          products deployed. With no certifications or lengthy sign-up
-          processes, you can generate revenue in a shorter timeframe. Check out
-          the additional resources below to find out how!
+          Join our AMA event spaces where we discuss how Convoke ICS helps your
+          business generate incredible sales within the stipulated duration.
         </p>
       </div>
 
@@ -438,11 +448,6 @@ const Learn = () => {
         </div>
 
         <div>
-          {/* <img
-            className="pb-4"
-            src="https://duo.com/assets/img/content-text/circle_3.png"
-            alt=""
-          /> */}
           <p className="text-[#303030] font-bold text-2xl pb-3">
             Upcoming events
           </p>
@@ -552,13 +557,16 @@ const Contact = () => {
   const [countries, setCountries] = useState([]);
   return (
     <div className="px-4 lg:px-24 py-10">
-      <div className="w-[100%] md:w-[50%]">
-        <h1 className="pb-8">Contact us for a demo</h1>
-        <p className="pb-8">
-          Find out if ICS is right for your business. Let’s schedule a time to
-          walk you through the ICS Package and product demonstration.
-        </p>
-        <div className="text-sm">
+      <div className="w-[100%] grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <h1 className="pb-8">Contact us for a demo</h1>
+          <p className="pb-8">
+            Find out if ICS is right for your business. Let’s schedule a time to
+            walk you through the ICS Package and product demonstration.
+          </p>
+        </div>
+        <button className="button-one">Speak to an expert</button>
+        {/* <div className="text-sm">
           <p className="text-right pb-6 text-base md:text-sm"> * Required</p>
 
           <form className="flex flex-col gap-4 pb-8" action="">
@@ -612,7 +620,7 @@ const Contact = () => {
             <p>Information you provide is subject to the</p>
             <Link className="underline">Cisco Online Privacy Statement.</Link>
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
