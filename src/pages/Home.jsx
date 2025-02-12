@@ -106,7 +106,7 @@ const Hero = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const mailchimpUrl = "http://eepurl.com/i9bMFw";
 
-  const initialTime = 60 * 60; // 1 hour in seconds
+  const initialTime = 4320 * 60; // 72 hour in seconds
   const [timeLeft, setTimeLeft] = useState(initialTime);
 
   useEffect(() => {
@@ -145,7 +145,7 @@ const Hero = () => {
             need to grow your business online. A 3-way solution to business
             success: identity, community, and sales.
           </p>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col md:flex-row gap-2">
             <button
               onClick={() => window.open(mailchimpUrl, "_blank")}
               className="button-two"
@@ -153,10 +153,10 @@ const Hero = () => {
               Request a demo
             </button>
             <div className="flex flex-row items-end gap-2">
-              <div className="button-one flex items-center justify-center w-full md:w-auto px-8 font-semibold">
+              <div className="button-one w-[50%] flex items-center justify-center w-full md:w-auto px-8 font-semibold">
                 {formatTime(timeLeft)}
               </div>
-              <p className="text-xs">Limited slots remaining</p>
+              <p className="text-xs w-[40%]">Limited slots remaining</p>
             </div>
           </div>
         </div>
@@ -242,49 +242,13 @@ const Why = () => {
           <div className="flex flex-row gap-2">
             <button
               onClick={() => window.open(mailchimpUrl, "_blank")}
-              className="button-two"
+              className="bg-[#009e3d] text-white py-[16px] px-[24px] border border-[009e3d] rounded-[4px] text-sm w-[100%] md:w-fit"
             >
               Request a demo
             </button>
           </div>
         </div>
       </div>
-
-      {/* <div className="bg-[#f5f6f8] relative px-0 lg:pl-24 grid grid-cols-1 md:grid-cols-6 gap-14">
-        <div className="md:col-span-3 px-4 lg:px-0 py-14">
-          <p className="absolute top-[-1.8rem] ">
-            <FaQuoteLeft color="#009956" size={55} />
-          </p>
-          <p className="text-lg md:text-base leading-8">
-            At Ntiva we see Cisco’s Duo portfolio as a beacon of continuous
-            innovation, consistently adapting to the evolving landscape of
-            cybersecurity. Its user-friendly interface, efficiency, and robust
-            security measures make it an indispensable asset for any company
-            striving for comprehensive multi-factor authentication coverage.”
-          </p>
-          <p className="text-base md:text-sm pt-6 font-bold text-gray-900">
-            — Ted Brown, Director of Product Management, Ntiva
-          </p>
-        </div>
-        <div className="md:col-span-3 py-8 flex items-center">
-          <div className="greenBg relative w-[100%] h-[200px] md:h-[250px] pl-8 py-2">
-            <span className="absolute left-[22%] lg:left-6 top-[-1.6rem] lg:top-[-1.2rem]">
-              <img
-                className="w-[12rem] md:w-[14rem]"
-                src="https://duo.com/assets/img/featured-quote/tigunia-customer-photo.png"
-                alt=""
-              />
-            </span>
-            <span className="absolute w-[6.5rem] shadow-2xl drop-shadow-2xl bg-white py-10 md:py-8 bottom-1 md:bottom-10 lg:bottom-1 left-60 lg:left-40 flex items-center justify-center z-50">
-              <img
-                className="w-[4rem]"
-                src="https://duo.com/img/asset/aW1nL2N1c3RvbWVybG9nb3MvTnRpdmEtTG9nby1CbHVlLVRhZ2xpbmUucG5n?filt=greyscale&gam=0.1&s=8e4a467c7ae624be93881f55a9d6025e"
-                alt=""
-              />
-            </span>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
@@ -339,7 +303,7 @@ const Grow = () => {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#88d39f] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -357,7 +321,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#88d39f] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -374,7 +338,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#88d39f]  flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -391,7 +355,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#88d39f]  flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -408,7 +372,7 @@ const Grow = () => {
 
           <Link
             to={"https://staymedia.ng/case-studies/"}
-            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#a2a2a2] flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
+            className="group hover:scale-95 hover:bg-gray-100/10 hover:border-[#88d39f]/50 py-4 px-2 border-[0.05px] border-[#88d39f]  flex flex-col gap-6 items-center justify-center ease-in-out duration-200"
           >
             <img
               className="group-hover:animate-bounce duration-600 w-[4rem]"
@@ -439,8 +403,8 @@ const Learn = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-start gap-12">
-        <div className="">
+      <div className="grid grid-cols-1 place-items-start gap-12">
+        {/* <div className="">
           <img
             src="https://png.pngtree.com/png-clipart/20221006/ourmid/pngtree-calendar-3d-icon-render-png-image_6275730.png"
             alt=""
@@ -471,7 +435,21 @@ const Learn = () => {
               Kaseya DattoCon Asia-Pacific - Nov 12-14
             </p>
           </div>
-        </div>
+        </div> */}
+
+        <div className="bg-[#fcb52f] px-4 py-6 w-full grid grid-cols-4 md:grid-cols-5 gap-2 place-items-center">
+          <img src="" alt=""/>
+          
+          <div className="flex flex-col col-span-2 md:col-span-3 gap-1">
+            <p className="text-sm md:text-base uppercase">Upcoming events</p>
+            <p className="text-white font-semibold text-xl md:text-2xl">AMA with STAY MEDIA</p>
+          </div>
+
+          <button className="greenBg text-white h-fit rounded-[10px] w-full text-sm md:text-lg py-4 md:px-3">
+            Remind Me
+          </button>
+
+          </div>
       </div>
     </div>
   );
@@ -486,37 +464,14 @@ const FAQS = () => {
       // answer:
       // "The MSP Duo Account you receive as a partner offers multi-tenancy so that you can manage your client accounts easily. Other than this, the account types have the same feature/functionality, across all editions.",
     },
-    // {
-    //   question:
-    //     "Do I have access to a Partner Account team after I’ve signed up?",
-    //   answer:
-    //     "Yes – You will be aligned with a Partner Account Manager, who has access to Business Development and Technical resources to ensure you’re getting the most out of your partnership with Duo.",
-    // },
-    // {
-    //   question:
-    //     "What’s the catch? Are there any initial barriers to becoming an MSP Partner?",
-    //   answer:
-    //     "No catch! Partnerships with the Duo MSP Program are free and do not require any sales commitments (or minimums). There are also no special certifications required to participate.",
-    // },
-    // {
-    //   question:
-    //     "Does the MSP Partner Program offer both monthly and annual billing options?",
-    //   answer:
-    //     "Our program bills monthly, based on the total number of billable users in your console at the end of each month.",
-    // },
-    // {
-    //   question:
-    //     "Where do I find resources to train my team? Or who can I contact if I have additional questions?",
-    //   answer:
-    //     "As a Duo MSP Partner, you can reach out to your Partner Manager, or msp@duo.com, for assistance. Not quite ready to become a partner? You can reach out to our team at mspadr@duosecurity.com for answers to questions you may have and to help get signed up!",
-    // },
   ];
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   return (
-    <div className=" py-12">
+    <div className="py-12">
       <div className="px-4 lg:px-24">
         <h1>Frequently asked questions</h1>
       </div>
@@ -565,7 +520,7 @@ const Contact = () => {
             walk you through the ICS Package and product demonstration.
           </p>
         </div>
-        <button className="button-one">Speak to an expert</button>
+        <button className="border border-[#303030] px-[24px] py-[16px] rounded-[4px] bg-[#fff]">Speak to an expert</button>
         {/* <div className="text-sm">
           <p className="text-right pb-6 text-base md:text-sm"> * Required</p>
 
@@ -645,3 +600,14 @@ const Better = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
