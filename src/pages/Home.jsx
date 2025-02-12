@@ -438,18 +438,19 @@ const Learn = () => {
         </div> */}
 
         <div className="bg-[#fcb52f] px-4 py-6 w-full grid grid-cols-4 md:grid-cols-5 gap-2 place-items-center">
-          <img src="" alt=""/>
-          
+          <img src="" alt="" />
+
           <div className="flex flex-col col-span-2 md:col-span-3 gap-1">
             <p className="text-sm md:text-base uppercase">Upcoming events</p>
-            <p className="text-white font-semibold text-xl md:text-2xl">AMA with STAY MEDIA</p>
+            <p className="text-white font-semibold text-xl md:text-2xl">
+              AMA with STAY MEDIA
+            </p>
           </div>
 
           <button className="greenBg text-white h-fit rounded-[10px] w-full text-sm md:text-lg py-4 md:px-3">
             Remind Me
           </button>
-
-          </div>
+        </div>
       </div>
     </div>
   );
@@ -520,7 +521,9 @@ const Contact = () => {
             walk you through the ICS Package and product demonstration.
           </p>
         </div>
-        <button className="border border-[#303030] px-[24px] py-[16px] rounded-[4px] bg-[#fff]">Speak to an expert</button>
+        <button className="border border-[#303030] px-[24px] py-[16px] rounded-[4px] bg-[#fff] h-fit w-fit">
+          Speak to an expert
+        </button>
         {/* <div className="text-sm">
           <p className="text-right pb-6 text-base md:text-sm"> * Required</p>
 
@@ -600,14 +603,3 @@ const Better = () => {
 };
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
