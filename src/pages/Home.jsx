@@ -153,10 +153,10 @@ const Hero = () => {
               Request a demo
             </button>
             <div className="flex flex-row items-end gap-2">
-              <div className="button-one w-[50%] flex items-center justify-center w-full md:w-auto px-8 font-semibold">
+              <div className="button-one w-[50%] flex items-center justify-center md:w-full md:w-auto px-8 font-semibold">
                 {formatTime(timeLeft)}
               </div>
-              <p className="text-xs w-[40%]">Limited slots remaining</p>
+              <p className="text-xs w-[40%] md:w-full">Limited slots remaining</p>
             </div>
           </div>
         </div>
