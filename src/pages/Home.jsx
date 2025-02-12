@@ -513,7 +513,7 @@ const Contact = () => {
   const [countries, setCountries] = useState([]);
   return (
     <div className="px-4 lg:px-24 py-10">
-      <div className="w-[100%] grid grid-cols-1 md:grid-cols-2">
+      <div className="w-[100%] flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
           <h1 className="pb-8">Contact us for a demo</h1>
           <p className="pb-8">
@@ -521,7 +521,7 @@ const Contact = () => {
             walk you through the ICS Package and product demonstration.
           </p>
         </div>
-        <button className="border border-[#303030] px-[24px] py-[16px] rounded-[4px] bg-[#fff] h-fit w-fit">
+        <button className="border border-[#303030] px-[24px] py-[16px] rounded-[4px] bg-[#fff] h-fit w-full md:w-fit">
           Speak to an expert
         </button>
         {/* <div className="text-sm">
