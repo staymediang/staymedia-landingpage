@@ -156,7 +156,9 @@ const Hero = () => {
               <div className="button-one w-[50%] flex items-center justify-center md:w-full md:w-auto px-8 font-semibold">
                 {formatTime(timeLeft)}
               </div>
-              <p className="text-xs w-[40%] md:w-full">Limited slots remaining</p>
+              <p className="text-xs w-[40%] md:w-full">
+                Limited slots remaining
+              </p>
             </div>
           </div>
         </div>

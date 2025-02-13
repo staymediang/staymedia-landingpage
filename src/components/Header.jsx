@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MdMenu, MdClose, MdSearch } from "react-icons/md";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 import { LiaUserLockSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 
@@ -117,58 +117,66 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-[5rem] flex flex-col justify-between right-0 w-[98%] h-[92vh] bg-white shadow-xl transform ${
+        className={`fixed px-4 py-8 top-0 flex flex-col justify-between right-0 w-[100%] h-[100vh] greenBg transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 z-50`}
       >
         <div>
           {/* Admin Login & Search Input */}
-          <div className="flex flex-row text-xl justify-between items-center w-full gap-2 px-4 py-6 border-b">
-            <Link className="flex items-center gap-2 text-gray-700">
-              <LiaUserLockSolid size={30} />
-              <span className="text-">Admin Login</span>
-            </Link>
-            <span className="flex text-xl px-2 flex-row gap-2 cursor-pointer items-center justify-center">
+          <div className="flex flex-row text-xl justify-end items-center w-full gap-2 pb-10">
+            {/* <span className="flex text-xl px-2 flex-row gap-2 cursor-pointer items-center justify-center">
               <p>
                 <MdSearch size={25} />
               </p>{" "}
               Search
-            </span>
+            </span> */}
+            <div
+              className=" text-white bg-[#fcb52f] rounded-full p-2 lg:hidden cursor-pointer"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <MdClose size={35} /> : <MdMenu size={35} />}
+            </div>
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex flex-col text-2xl text-gray-800">
-            <span className="flex flex-row items-center gap-2 justify-between cursor-pointer border-b px-4 py-6 hover:text-[#6bbf4f]">
-              <p>Our product</p>
-              <p>
-                <FaAngleDown size={30} />
+          <nav className="flex flex-col font-semibold w-full text-2xl text-[#f8f8f8]">
+            <Link
+              to={"/"}
+              className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]"
+            >
+              <p>Home</p>
+            </Link>
+            <Link
+              to={"/"}
+              className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]"
+            >
+              <p>About</p>
+              <p className="border border-[#88d39f] p-2 rounded-md">
+                <FaAngleRight size={30} />
               </p>
-            </span>
-            <span className="flex flex-row items-center gap-2 justify-between cursor-pointer border-b px-4 py-6 hover:text-[#6bbf4f]">
+            </Link>
+            <Link
+              to={"/"}
+              className="flex flex-row items-center gap-2 justify-between cursor-pointer  px-4 py-4 hover:text-[#6bbf4f]"
+            >
+              <p>Services</p>
+              <p className="border border-[#88d39f] p-2 rounded-md">
+                <FaAngleRight size={30} />
+              </p>
+            </Link>
+            <Link className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]">
               <p>Solutions</p>
-              <p>
-                <FaAngleDown size={30} />
+              <p className="border border-[#88d39f] p-2 rounded-md">
+                <FaAngleRight size={30} />
               </p>
-            </span>
-            <span className="flex flex-row items-center gap-2 justify-between cursor-pointer border-b px-4 py-6 hover:text-[#6bbf4f]">
-              <p>Why Duo</p>
-              <p>
-                <FaAngleDown size={30} />
+            </Link>
+            <Link className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]">
+              <p>More</p>
+              <p className="border border-[#88d39f] p-2 rounded-md">
+                <FaAngleRight size={30} />
               </p>
-            </span>
-            <span className="flex flex-row items-center gap-2 justify-between cursor-pointer border-b px-4 py-6 hover:text-[#6bbf4f]">
-              <p>Pricing</p>
-              <p>
-                <FaAngleDown size={30} />
-              </p>
-            </span>
+            </Link>
           </nav>
-        </div>
-
-        {/* Buttons at the Bottom */}
-        <div className=" w-full mb-4 flex justify-between px-4 gap-4">
-          <button className="button-one w-[50%]">Contact Sales</button>
-          <button className="button-two w-[50%]">Free Trial</button>
         </div>
       </div>
     </div>
