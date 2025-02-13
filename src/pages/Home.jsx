@@ -88,7 +88,7 @@ const Home = () => {
         <div>
           <button
             onClick={() => setShowChatbox(true)}
-            className="fixed z-60 bottom-6 right-4 greenBg text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
+            className="fixed z-60 bottom-6 right-4 bg-[#25d366] text-white p-3 rounded-full shadow-md hover:bg-green-700 transition-all"
           >
             <FaWhatsapp size={20} />
           </button>
@@ -153,7 +153,7 @@ const Hero = () => {
               Request a demo
             </button>
             <div className="flex flex-row items-end gap-2">
-              <div className="button-one w-[50%] flex items-center justify-center md:w-full md:w-auto px-8 font-semibold">
+              <div className="button-one w-[50%] flex items-center justify-center md:w-full px-8 font-semibold">
                 {formatTime(timeLeft)}
               </div>
               <p className="text-xs w-[40%] md:w-full">
