@@ -439,7 +439,7 @@ const Learn = () => {
           </div>
         </div> */}
 
-        <div className="bg-[#fcb52f] px-4 py-6 w-full grid grid-cols-4 md:grid-cols-5 gap-2 place-items-center">
+        <div className="bg-[#fcb52f] px-4 py-6 w-full grid grid-cols-1 justify-center md:justify-normal md:grid-cols-5 gap-2 place-items-center">
           <img src="" alt="" />
 
           <div className="flex flex-col col-span-2 md:col-span-3 gap-1">
