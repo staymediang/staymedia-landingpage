@@ -526,61 +526,6 @@ const Contact = () => {
         <button className="border border-[#303030] px-[24px] py-[16px] rounded-[4px] bg-[#fff] h-fit w-full md:w-fit">
           Speak to an expert
         </button>
-        {/* <div className="text-sm">
-          <p className="text-right pb-6 text-base md:text-sm"> * Required</p>
-
-          <form className="flex flex-col gap-4 pb-8" action="">
-            <FloatingLabel label="First Name *" type="text" name="name" />
-            <FloatingLabel label="Last Name *" type="text" name="name" />
-            <FloatingLabel label="Business Email *" type="email" name="email" />
-            <FloatingLabel label="Title *" type="text" name="title" />
-            <FloatingLabel
-              label="Select Country *"
-              type="select"
-              name="country"
-              options={countries}
-              setOptions={setCountries}
-            />
-            <FloatingLabel label="Phone Number *" type="tel" name="phone" />
-            <FloatingLabel label="Company Name *" type="text" name="company" />
-            <FloatingLabel
-              label="Company Size *"
-              type="select"
-              name="size"
-              options={[
-                "Please select*",
-                "Just me",
-                "2 - 10 employees",
-                "11. -  50 employees",
-                "51 - 200 employees",
-                "201 - 500 employees",
-                "501 - employees",
-                "1001 - 5000 employees",
-                "5001 - 10,000 employees",
-                "More than 10,000",
-              ]}
-            />
-            <FloatingLabel
-              label="Have a preferred day or time for your demo? Let us know here."
-              type="textarea"
-              name="message"
-            />
-          </form>
-          <div className="flex flex-row gap-2 items-start pb-8">
-            <input className="mt-1 w-5 h-5" type="checkbox" name="" id="" />
-            <span className="flex flex-row flex-wrap gap-1 items-center text-xs">
-              <p>By applying to the MCS Package I agree to the MCS Package </p>
-              <Link className="underline">terms and conditions.</Link>
-            </span>
-          </div>
-
-          <button className="button-two mb-8">Schedule Your Demo</button>
-
-          <span className="flex flex-row flex-wrap gap-1 items-center text-sm">
-            <p>Information you provide is subject to the</p>
-            <Link className="underline">Cisco Online Privacy Statement.</Link>
-          </span>
-        </div> */}
       </div>
     </div>
   );

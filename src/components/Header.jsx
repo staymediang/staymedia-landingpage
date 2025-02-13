@@ -8,6 +8,29 @@ const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinks = [
+    {
+      title: "Home",
+      link: "https://staymedia.ng/",
+    },
+    {
+      title: "About",
+      link: "https://staymedia.ng/about/",
+    },
+    {
+      title: "Services",
+      link: "https://staymedia.ng/services/",
+    },
+    {
+      title: "Solutions",
+      link: "https://staymedia.ng/#",
+    },
+    {
+      title: "More",
+      link: "https://staymedia.ng/#",
+    },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -38,12 +61,12 @@ const Header = () => {
         }`}
       >
         <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold">
-          <div className="w-[10rem] pr-3">
+          <Link to={"https://staymedia.ng/"} className="w-[10rem] pr-3">
             <img
               src="https://staymedia.ng/wp-content/uploads/2023/08/STAYMEDIA_1_logo.png"
               alt=""
             />
-          </div>
+          </Link>
         </div>
 
         {/* MIDDLE */}
@@ -57,9 +80,10 @@ const Header = () => {
             <p className="text-gray-400">Come intern with us to improve you.</p>
           </div>
           <div className="hidden lg:flex flex-row justify-center text-base font-[500]">
-            {["Home", "About", "Services", "Solutions", "More"].map((item) => (
-              <span
+            {navLinks.map((item) => (
+              <Link
                 key={item}
+                to={item.link}
                 className={`relative group flex flex-row items-center  gap-2 px-5 py-2 justify-center cursor-pointer greenText hover:greenText/60 
       ${
         isFixed
@@ -67,14 +91,14 @@ const Header = () => {
           : "border-t-[1px] border-t-gray-400"
       }`}
               >
-                <p>{item}</p>
+                <p className="capitalize">{item.title}</p>
                 {/* Animated Border */}
                 <div
                   className={`absolute top-0 left-0 h-[2px] bg-gray-700 w-0 transition-all duration-700 ease-out group-hover:w-full ${
                     isFixed ? "hidden" : "block"
                   }`}
                 ></div>
-              </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -147,7 +171,7 @@ const Header = () => {
               <p>Home</p>
             </Link>
             <Link
-              to={"/"}
+              to={"https://staymedia.ng/about/"}
               className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]"
             >
               <p>About</p>
@@ -156,7 +180,7 @@ const Header = () => {
               </p>
             </Link>
             <Link
-              to={"/"}
+              to={"https://staymedia.ng/services/"}
               className="flex flex-row items-center gap-2 justify-between cursor-pointer  px-4 py-4 hover:text-[#6bbf4f]"
             >
               <p>Services</p>
@@ -164,13 +188,19 @@ const Header = () => {
                 <FaAngleRight size={30} />
               </p>
             </Link>
-            <Link className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]">
+            <Link
+              to={"https://staymedia.ng/services/"}
+              className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]"
+            >
               <p>Solutions</p>
               <p className="border border-[#88d39f] p-2 rounded-md">
                 <FaAngleRight size={30} />
               </p>
             </Link>
-            <Link className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]">
+            <Link
+              to={"https://staymedia.ng/#"}
+              className="flex flex-row items-center gap-2 justify-between cursor-pointer px-4 py-4 hover:text-[#6bbf4f]"
+            >
               <p>More</p>
               <p className="border border-[#88d39f] p-2 rounded-md">
                 <FaAngleRight size={30} />

@@ -27,56 +27,119 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-4 w-[45%] md:w-[20%] lg:w-[18%]">
-          <p className="text-white hover:text-[#fbb52f] cursor-pointer">
+          <Link
+            to={"https://staymedia.ng/services/"}
+            className="text-white hover:text-[#fbb52f] cursor-pointer"
+          >
             Services
-          </p>
+          </Link>
           <div className="capitalize text-white/70 flex flex-col gap-4">
-            <Link className="hover:text-[#fbb52f]">Graphic Design</Link>
-            <Link className="hover:text-[#fbb52f]">Social media marketing</Link>
-            <Link className="hover:text-[#fbb52f]">Website development</Link>
+            <Link
+              to={"https://staymedia.ng/services/graphic-design/"}
+              className="hover:text-[#fbb52f]"
+            >
+              Graphic Design
+            </Link>
+            <Link
+              to={"https://staymedia.ng/services/social-media-marketing/"}
+              className="hover:text-[#fbb52f]"
+            >
+              Social media marketing
+            </Link>
+            <Link
+              to={"https://staymedia.ng/services/website-development/"}
+              className="hover:text-[#fbb52f]"
+            >
+              Website development
+            </Link>
           </div>
         </div>
 
         <div className="capitalize flex flex-col w-[45%] md:w-[20%] lg:w-[12%] gap-4 ">
-          <p className="text-white hover:text-[#fbb52f]">Solution</p>
-          <p className="text-white/70 hover:text-[#fbb52f]">case studies</p>
+          <Link
+            to={"https://staymedia.ng/#"}
+            className="text-white hover:text-[#fbb52f]"
+          >
+            Solution
+          </Link>
+          <Link
+            to={"https://staymedia.ng/case-studies/"}
+            className="text-white/70 hover:text-[#fbb52f]"
+          >
+            case studies
+          </Link>
         </div>
 
         <div className="flex flex-col gap-4 w-[45%] md:w-[20%] lg:w-[12%]">
-          <p className="text-white hover:text-[#fbb52f] cursor-pointer">
+          <Link
+            to={"https://staymedia.ng/#"}
+            className="text-white hover:text-[#fbb52f] cursor-pointer"
+          >
             Company
-          </p>
+          </Link>
 
           <div className="capitalize text-white/70 flex flex-col gap-4">
-            <Link className="text-white/70 hover:text-[#fbb52f]">About</Link>
-            <Link className="text-white/70 hover:text-[#fbb52f]">Careers</Link>
+            <Link
+              to={"https://staymedia.ng/about/"}
+              className="text-white/70 hover:text-[#fbb52f]"
+            >
+              About
+            </Link>
+            <Link
+              to={"https://staymedia.ng/careers/"}
+              className="text-white/70 hover:text-[#fbb52f]"
+            >
+              Careers
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-col gap-4 w-[45%] md:w-[20%] lg:w-[15%]">
-          <p className="text-white hover:text-[#fbb52f] cursor-pointer">
+          <Link
+            to={"https://staymedia.ng/#"}
+            className="text-white hover:text-[#fbb52f] cursor-pointer"
+          >
             Support
-          </p>
+          </Link>
 
           <div className="capitalize text-white/70 flex flex-col gap-4">
-            <Link className="text-white/70 hover:text-[#fbb52f]">Enquire</Link>
-            <Link className="text-white/70 hover:text-[#fbb52f]">FAQ</Link>
+            <Link
+              to={"https://staymedia.ng/contact-us/"}
+              className="text-white/70 hover:text-[#fbb52f]"
+            >
+              Enquire
+            </Link>
+            <Link
+              to={"https://staymedia.ng/faq/"}
+              className="text-white/70 hover:text-[#fbb52f]"
+            >
+              FAQ
+            </Link>
           </div>
         </div>
       </div>
 
       <div className="bg-white py-3 w-[100%] space-y-4 px-4 lg:px-24 flex flex-col md:flex-row justify-center md:justify-between items-center">
         <div className="flex flex-row gap-2  text-xs items-center">
-          <span className="text-white bg-blue-800 p-2">
+          <Link
+            to={"https://www.facebook.com/staymediang/"}
+            className="text-white bg-blue-800 hover:bg-[#fcb52f] p-2"
+          >
             <FaFacebookF />
-          </span>
-          <span className="text-white bg-blue-400 p-2">
+          </Link>
+          <Link
+            to={"https://twitter.com/staymediang"}
+            className="text-white bg-blue-400 hover:bg-[#fcb52f] p-2"
+          >
             <FaTwitter />
-          </span>
-          <span className="bg-red-600 text-white p-2">
+          </Link>
+          <Link
+            to={"https://www.instagram.com/staymediang/"}
+            className="bg-red-600 hover:bg-[#fcb52f] text-white p-2"
+          >
             {" "}
             <FaInstagram />
-          </span>
+          </Link>
         </div>
 
         <div className="text-sm flex flex-row gap-1 items-center text-[#303030]">
