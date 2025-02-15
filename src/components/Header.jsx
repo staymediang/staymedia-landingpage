@@ -3,6 +3,7 @@ import { MdMenu, MdClose, MdSearch } from "react-icons/md";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 import { LiaUserLockSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import HeaderLogo from "../assets/img/headerlogo.png";
 
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -62,10 +63,7 @@ const Header = () => {
       >
         <div className="flex flex-row gap-3 justify-between md:justify-normal items-center text-sm font-bold">
           <Link to={"https://staymedia.ng/"} className="w-[10rem] pr-3">
-            <img
-              src="https://staymedia.ng/wp-content/uploads/2023/08/STAYMEDIA_1_logo.png"
-              alt=""
-            />
+            <img src={HeaderLogo} alt="" />
           </Link>
         </div>
 

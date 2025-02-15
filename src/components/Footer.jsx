@@ -8,6 +8,7 @@ import {
 import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { MdSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
+import FooterLogo from "../assets/img/footerlogo.png";
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
         <div className="w-[100%] lg:w-[30%] flex flex-col gap-4">
           <img
             className="w-[10rem]"
-            src="https://staymedia.ng/wp-content/uploads/2021/03/web-graphics-28.png"
+            src={FooterLogo}
             alt=""
           />
           <p>
